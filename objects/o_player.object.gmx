@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>Jake</sound>
+            <sound>-100</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -253,7 +253,7 @@ health = 100;
             <string>///Shoot
 bullet = instance_create(x, y, o_bullet)
 
-bullet.direction = image_angle - 90;
+bullet.direction = image_angle + 90;
 bullet.image_angle = image_angle;
 bullet.speed = 15;
 

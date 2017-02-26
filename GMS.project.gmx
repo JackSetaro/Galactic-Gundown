@@ -11,6 +11,8 @@
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_bullet</sprite>
     <sprite>sprites\s_enemy1</sprite>
+    <sprite>sprites\s_barrier</sprite>
+    <sprite>sprites\sprite4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -23,6 +25,7 @@
     <object>objects\o_bullet</object>
     <object>objects\o_enemy1</object>
     <object>objects\o_pause</object>
+    <object>objects\o_barrier</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
