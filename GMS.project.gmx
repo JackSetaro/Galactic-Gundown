@@ -9,7 +9,9 @@
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_bullet</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\b_kylebackground</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\o_player</object>
