@@ -6,23 +6,17 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_ground</sprite>
-    <sprite>sprites\s_wall</sprite>
     <sprite>sprites\s_player</sprite>
-    <sprite>sprites\s_shot</sprite>
+    <sprite>sprites\s_bullet</sprite>
   </sprites>
-  <backgrounds name="background">
-    <background>background\b_ground</background>
-    <background>background\grass</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\o_player</object>
-    <object>objects\o_wall</object>
-    <object>objects\o_shot</object>
+    <object>objects\o_bullet</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\r_start</room>
+    <room>rooms\rm_start</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

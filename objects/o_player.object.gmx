@@ -8,78 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Stop Rotation
-phy_fixed_rotation = true;
-vel = 6;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Shooting 
-global.dir = 0;
-firing = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(x, y, o_shot);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -97,32 +25,104 @@ firing = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Movement
+            <string>///Movement Engine
 
-//Move Right
-if (keyboard_check(ord('D'))) {
-phy_position_x += vel;
+if keyboard_check(ord('W')){
+y -= 4;
 }
 
-//Move Left
-if (keyboard_check(ord('A'))) {
-phy_position_x -= vel;
+if keyboard_check(ord('S')){
+y += 4;
 }
 
-//Move Up
-if (keyboard_check(ord('W'))) {
-phy_position_y -= vel;
+if keyboard_check(ord('A')){
+x -= 4;
 }
 
-//Move Down
-if (keyboard_check(ord('S'))) {
-phy_position_y += vel;
+if keyboard_check(ord('D')){
+x += 4;
 }
+
+///For Alt Speed Engine
+//speed = max(speed - 0.01, 0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="87">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Alt Movement Engine
+//motion_add(image_angle, 0.2)
+//if (speed = 1) speed = 1;
 
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="5" enumb="39">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_angle = image_angle - 4
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="37">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_angle = image_angle + 4
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -140,65 +140,11 @@ phy_position_y += vel;
           <argument>
             <kind>1</kind>
             <string>///Shoot
+bullet = instance_create(x, y, o_bullet)
 
-//Shoot up
-if (keyboard_check(vk_up)) {
-    if (firing == false){
-        alarm[0] = 10;
-        global.dir = 90;
-        firing = true;
-    }
-}
-
-//Shoot down
-if (keyboard_check(vk_down)) {
-    if (firing == false){
-        alarm[0] = 10;
-        global.dir = 270;
-        firing = true;
-    }
-}
-
-//Shoot left
-if (keyboard_check(vk_left)) {
- if (firing == false){
-        alarm[0] = 10;
-        global.dir = 360;
-        firing = true;
-    }
-}
-
-//Shoot right
-if (keyboard_check(vk_right)) {
- if (firing == false){
-        alarm[0] = 10;
-        global.dir = 0;
-        firing = true;
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="o_wall">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Collide
+bullet.direction = image_angle;
+bullet.image_angle = image_angle;
+bullet.speed = 15;
 
 </string>
           </argument>
@@ -206,10 +152,10 @@ if (keyboard_check(vk_right)) {
       </action>
     </event>
   </events>
-  <PhysicsObject>-1</PhysicsObject>
+  <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>2</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.100000001490116</PhysicsObjectDensity>
+  <PhysicsObjectShape>0</PhysicsObjectShape>
+  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
@@ -217,12 +163,5 @@ if (keyboard_check(vk_right)) {
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>8,0</point>
-    <point>18,0</point>
-    <point>18,30</point>
-    <point>8,30</point>
-    <point>6,18</point>
-    <point>6,6</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>
