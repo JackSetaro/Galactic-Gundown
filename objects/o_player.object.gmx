@@ -3,7 +3,7 @@
   <spriteName>s_player</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -145,7 +145,7 @@ health = 100;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="o_barrier">
+    <event eventtype="4" ename="o_astriod">
       <action>
         <libid>1</libid>
         <id>115</id>
@@ -279,7 +279,7 @@ health = 100;
             <string>///Shoot
 bullet = instance_create(x, y, o_bullet)
 
-bullet.direction = image_angle + 90;
+bullet.direction = image_angle  + 90;
 bullet.image_angle = image_angle;
 bullet.speed = 15;
 
