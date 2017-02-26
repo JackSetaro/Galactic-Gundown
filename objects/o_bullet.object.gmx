@@ -84,7 +84,7 @@ if (global.pause) exit;
   </events>
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>1</PhysicsObjectShape>
+  <PhysicsObjectShape>0</PhysicsObjectShape>
   <PhysicsObjectDensity>0.00100000004749745</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
@@ -94,9 +94,7 @@ if (global.pause) exit;
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>27,18</point>
-    <point>36,18</point>
-    <point>36,48</point>
-    <point>27,48</point>
+    <point>14,19</point>
+    <point>16,16</point>
   </PhysicsShapePoints>
 </object>

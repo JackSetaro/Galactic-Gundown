@@ -21,7 +21,5 @@
   <height>64</height>
   <frames>
     <frame index="0">images\s_player_0.png</frame>
-    <frame index="1">images\s_player_1.png</frame>
-    <frame index="2">images\s_player_2.png</frame>
   </frames>
 </sprite>
