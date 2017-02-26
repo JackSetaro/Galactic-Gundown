@@ -11,6 +11,29 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Health
+health = 100;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>211</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -72,6 +95,12 @@ x += 4;
 
 ///For Alt Speed Engine
 //speed = max(speed - 0.01, 0);
+
+//pause
+if (global.pause == 1)
+{
+ exit;
+}
 </string>
           </argument>
         </arguments>
@@ -115,8 +144,11 @@ y=clamp(y, 0, room_height - 3);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///pause
-if (global.pause) exit;
+            <string>///Death
+
+if (health &lt; 0){
+room_restart();
+}
 </string>
           </argument>
         </arguments>
@@ -137,9 +169,34 @@ if (global.pause) exit;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Health
-health = 100;
+            <string>///Manual Restart
 
+if keyboard_check(ord('R'))
+{
+    room_restart()
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Animation
+image_speed = 0.2
 </string>
           </argument>
         </arguments>
@@ -174,17 +231,24 @@ health = 100;
     <event eventtype="4" ename="o_enemy1">
       <action>
         <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>health = health - 10;
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="5" enumb="87">
@@ -230,7 +294,8 @@ health = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = image_angle - 3
+            <string>if (global.pause == 1) exit;
+image_angle = image_angle - 3
 </string>
           </argument>
         </arguments>
@@ -253,7 +318,8 @@ health = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = image_angle + 3
+            <string>if (global.pause == 1) exit;
+image_angle = image_angle + 3
 </string>
           </argument>
         </arguments>
@@ -277,6 +343,7 @@ health = 100;
           <argument>
             <kind>1</kind>
             <string>///Shoot
+if (global.pause == 1) exit;
 bullet = instance_create(x, y, o_bullet)
 
 bullet.direction = image_angle  + 90;
