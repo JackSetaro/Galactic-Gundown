@@ -24,6 +24,7 @@
   <objects name="objects">
     <object>objects\o_player</object>
     <object>objects\o_bullet</object>
+    <object>objects\o_health_</object>
     <object>objects\o_enemy1</object>
     <object>objects\o_pause</object>
     <object>objects\o_barrier</object>
