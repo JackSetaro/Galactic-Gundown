@@ -291,7 +291,7 @@ bullet.speed = 15;
   </events>
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>1</PhysicsObjectShape>
+  <PhysicsObjectShape>2</PhysicsObjectShape>
   <PhysicsObjectDensity>10</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
@@ -301,9 +301,9 @@ bullet.speed = 15;
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>12,16</point>
-    <point>56,16</point>
-    <point>56,56</point>
-    <point>12,56</point>
+    <point>8,52</point>
+    <point>32,16</point>
+    <point>56,52</point>
+    <point>32,52</point>
   </PhysicsShapePoints>
 </object>
