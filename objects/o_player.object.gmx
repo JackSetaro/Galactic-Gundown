@@ -163,7 +163,7 @@ if (global.pause == 1) exit;
 
 if  keyboard_check(ord('R'))
 {
-    room_restart()
+    room_restart();
 }
 </string>
           </argument>
@@ -186,6 +186,7 @@ if  keyboard_check(ord('R'))
           <argument>
             <kind>1</kind>
             <string>///Death
+if (health &lt; 1) instance_destroy();
 
 if (health &lt; 1) room_restart();
 </string>
