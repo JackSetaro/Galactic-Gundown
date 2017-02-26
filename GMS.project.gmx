@@ -4,18 +4,25 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Jake</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_bullet</sprite>
+    <sprite>sprites\s_enemy1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
+    <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\o_player</object>
     <object>objects\o_bullet</object>
+    <object>objects\o_enemy1</object>
+    <object>objects\o_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
