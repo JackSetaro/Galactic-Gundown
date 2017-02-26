@@ -56,6 +56,7 @@
     <instance objName="o_pause" x="96" y="96" name="inst_5B51A099" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_health_" x="465" y="0" name="inst_F6CE7EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_health_" x="641" y="0" name="inst_8019263D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+<<<<<<< HEAD
     <instance objName="o_enemy1" x="160" y="192" name="inst_690F82CF" locked="0" code="" scaleX="0.316000014543533" scaleY="0.306220084428787" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy1" x="480" y="128" name="inst_1E730BAF" locked="0" code="" scaleX="0.316000014543533" scaleY="0.306220084428787" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy1" x="1312" y="896" name="inst_4B3552B2" locked="0" code="" scaleX="0.312252968549728" scaleY="0.264423072338104" colour="4294967295" rotation="0"/>
@@ -112,6 +113,82 @@
     <instance objName="o_astriod" x="672" y="864" name="inst_94C54684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_astriod" x="672" y="896" name="inst_4418FB0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_astriod" x="672" y="928" name="inst_84391E8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="o_astriod" x="128" y="704" name="inst_2AD1AE6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="672" name="inst_0FC9ED88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="640" name="inst_29F8005A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="608" name="inst_099DFA6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="576" name="inst_5DFDDCF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="544" name="inst_E841FF7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="512" name="inst_EE884A00" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="480" name="inst_5D5C3AF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="416" name="inst_12A4A503" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="-32" name="inst_96C24C65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="64" name="inst_4DCE8267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="32" name="inst_A6EF39D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="448" name="inst_D60D1C53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="0" name="inst_4120FA34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="96" name="inst_C550C3C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="128" name="inst_3BB32ED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="192" name="inst_DC79709D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="224" name="inst_9117BE43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="256" name="inst_5FD3FA7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="128" y="160" name="inst_F453DB4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="32" name="inst_5B3BE816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="-32" name="inst_5C8FE5F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="0" name="inst_FC36B19C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="576" name="inst_7A556D3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="512" name="inst_B88D092B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="192" name="inst_130AFF2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="128" name="inst_A4FE0878" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="448" name="inst_1EFE4C20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="544" name="inst_913BB063" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="416" name="inst_0A0C2CB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="672" name="inst_745FA9DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="640" name="inst_78218AC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="608" name="inst_20D99739" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="480" name="inst_6459F340" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="256" name="inst_BF8400A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="224" name="inst_98A3907E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="160" name="inst_9E0CBD81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="96" name="inst_F318488F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="64" name="inst_465DB0E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="800" y="704" name="inst_CB22BD34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="64" y="256" name="inst_52A05049" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="864" y="416" name="inst_D51B7607" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="832" y="416" name="inst_A605B94B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="896" y="416" name="inst_5BA939AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="928" y="416" name="inst_9076F688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="960" y="416" name="inst_2F21E93F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="96" y="256" name="inst_D1649A0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="32" y="256" name="inst_BF3BFB61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="-32" y="256" name="inst_2656DB80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="0" y="256" name="inst_FDE0640F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="448" y="416" name="inst_FAF1E0CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="480" y="416" name="inst_D3EF19D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="448" y="448" name="inst_26C39619" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="512" y="448" name="inst_DFCC36E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="416" y="224" name="inst_170AD03A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="512" y="416" name="inst_24E6F308" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="512" y="384" name="inst_7954D48D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="416" y="256" name="inst_4DD1A02A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="416" y="448" name="inst_90B4FFC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="480" y="448" name="inst_10501682" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="416" y="384" name="inst_1DF95545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="416" y="416" name="inst_73FFF204" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="448" y="224" name="inst_655856A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="512" y="224" name="inst_A90CF572" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="480" y="224" name="inst_9A8FC399" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="512" y="256" name="inst_9B76609C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="512" y="288" name="inst_34CC05F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="512" y="320" name="inst_B5CDE817" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="512" y="352" name="inst_DC7807A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="416" y="288" name="inst_9CA9D7B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="416" y="320" name="inst_1B440253" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="416" y="352" name="inst_5A5F780D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="448" y="256" name="inst_200B63D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_astriod" x="480" y="256" name="inst_1E447ABF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> origin/master
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
