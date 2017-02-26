@@ -13,6 +13,7 @@
     <sprite>sprites\s_enemy1</sprite>
     <sprite>sprites\s_barrier</sprite>
     <sprite>sprites\sprite4</sprite>
+    <sprite>sprites\s_astriod</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
