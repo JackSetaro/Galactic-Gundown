@@ -95,7 +95,7 @@ if (gen == true)
             left = false;
             right = false;
             
-            instance_create(genx+512,geny-704,o_warp_bottom);
+            instance_create(genx+512,geny+704,o_warp_bottom);
             geny += 768;
             instance_create(genx,geny,o_room);
             instance_create(genx+512,geny,o_warp_top);
@@ -104,19 +104,19 @@ if (gen == true)
         if (ranroom == 2 &amp;&amp; right == false)
         {
             up = false;
-            down = true;
+            down = false;
             left = true;
             right = false;
             
             instance_create(genx+960,geny+352,o_warp_right);
-            genx = 1024;
+            genx += 1024;
             instance_create(genx,geny,o_room);
-            instance_create(genx,geny+352,o_warp_bottom);
+            instance_create(genx,geny+352,o_warp_left);
         }
         
         if (ranroom == 3 &amp;&amp; left == false)
         {
-            up = true;
+            up = false;
             down = false;
             left = false;
             right = true;
@@ -124,7 +124,7 @@ if (gen == true)
             instance_create(genx,geny+352,o_warp_left);
             genx -= 1024;
             instance_create(genx,geny,o_room);
-            instance_create(genx+960,geny+352,o_warp_top);
+            instance_create(genx+960,geny+352,o_warp_right);
         }
     }
     until (rooms_generated &gt;= 10)

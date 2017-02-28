@@ -163,7 +163,7 @@ if (global.pause == 1) exit;
 
 if  keyboard_check(ord('R'))
 {
-    room_restart();
+    instance_destroy();
 }
 </string>
           </argument>
