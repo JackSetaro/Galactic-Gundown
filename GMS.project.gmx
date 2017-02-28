@@ -10,13 +10,11 @@
   <sprites name="sprites">
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_bullet</sprite>
-    <sprite>sprites\s_arrow</sprite>
     <sprite>sprites\s_enemy1</sprite>
     <sprite>sprites\s_barrier</sprite>
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\s_astriod</sprite>
     <sprite>sprites\s_laser</sprite>
-    <sprite>sprites\s_spaceinvaders</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -24,25 +22,16 @@
     <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\scr_menu.gml</script>
-  </scripts>
-  <fonts name="fonts">
-    <font>fonts\fnt_options</font>
-  </fonts>
   <objects name="objects">
     <object>objects\o_player</object>
-    <object>objects\obj_menu</object>
     <object>objects\o_bullet</object>
     <object>objects\o_warp</object>
     <object>objects\o_health_</object>
     <object>objects\o_enemy1</object>
-    <object>objects\o_spaceinvaders</object>
     <object>objects\o_pause</object>
-    <object>objects\o_asteroid</object>
+    <object>objects\o_astriod</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Menu</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_2</room>
   </rooms>

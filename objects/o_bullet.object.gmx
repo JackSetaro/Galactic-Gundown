@@ -33,7 +33,7 @@ if (global.pause) exit;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="o_asteroid">
+    <event eventtype="4" ename="o_astriod">
       <action>
         <libid>1</libid>
         <id>203</id>
