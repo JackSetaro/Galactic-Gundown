@@ -29,7 +29,7 @@
 menu[0] = "Start";
 menu[1] = "Quit";
 //vertical spacing
-space = 64;
+space = 100;
 mpos = 0;
 
 </string>
@@ -95,7 +95,7 @@ if (push == 1) scr_menu();
             <string>draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_options);
-draw_set_color(c_white);
+draw_set_color(c_red);
 
 var m;
 for (m = 0; m &lt; array_length_1d(menu); m += 1)
