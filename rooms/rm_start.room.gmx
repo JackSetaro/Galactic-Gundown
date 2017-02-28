@@ -11,7 +11,7 @@
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code></code>
-  <enableViews>0</enableViews>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -52,12 +52,11 @@
   </views>
   <instances>
     <instance objName="o_player" x="96" y="704" name="inst_3031BE7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-45"/>
-    <instance objName="o_enemy1" x="928" y="128" name="inst_5F6D4DE8" locked="0" code="" scaleX="0.247999995946884" scaleY="0.320388346910477" colour="4294967295" rotation="-45"/>
     <instance objName="o_pause" x="96" y="96" name="inst_5B51A099" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_health_" x="465" y="0" name="inst_F6CE7EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_health_" x="641" y="0" name="inst_8019263D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_warp" x="992" y="320" name="inst_B46B4D04" locked="0" code="target_x = 100;&#xA;target_y = 365;&#xA;target_r = rm_2;&#xA;" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="o_enemy1" x="928" y="704" name="inst_16551BDB" locked="0" code="" scaleX="0.25" scaleY="0.319999992847443" colour="4294967295" rotation="-90"/>
+    <instance objName="o_player" x="160" y="192" name="inst_E785799E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_room_generator" x="288" y="64" name="inst_843C35B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

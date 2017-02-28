@@ -33,7 +33,7 @@ if (global.pause) exit;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="o_astriod">
+    <event eventtype="4" ename="o_enemy1">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -49,7 +49,7 @@ if (global.pause) exit;
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="o_enemy1">
+    <event eventtype="4" ename="o_player">
       <action>
         <libid>1</libid>
         <id>203</id>
