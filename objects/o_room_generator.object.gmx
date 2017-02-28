@@ -68,7 +68,7 @@ if (gen == true)
     do
     {
         ranroom = irandom(3)
-        rooms_generated =  rooms_generated ++;
+        rooms_generated ++;
         
         if (rooms_generated &gt;= 10)
         {
