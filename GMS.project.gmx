@@ -16,6 +16,7 @@
     <sprite>sprites\sprite4</sprite>
     <sprite>sprites\s_astriod</sprite>
     <sprite>sprites\s_laser</sprite>
+    <sprite>sprites\s_spaceinvaders</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -36,8 +37,9 @@
     <object>objects\o_warp</object>
     <object>objects\o_health_</object>
     <object>objects\o_enemy1</object>
+    <object>objects\o_spaceinvaders</object>
     <object>objects\o_pause</object>
-    <object>objects\o_astriod</object>
+    <object>objects\o_asteroid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>

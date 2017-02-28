@@ -6,8 +6,8 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
-  <persistent>0</persistent>
+  <speed>60</speed>
+  <persistent>-1</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_menu" x="96" y="160" name="inst_88215F24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_spaceinvaders" x="768" y="160" name="inst_82AE0019" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
