@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>1</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -33,7 +33,7 @@ if (global.pause) exit;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="o_enemy1">
+    <event eventtype="4" ename="o_room">
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -49,7 +49,7 @@ if (global.pause) exit;
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="7" enumb="0">
+    <event eventtype="4" ename="o_enemy1">
       <action>
         <libid>1</libid>
         <id>203</id>
