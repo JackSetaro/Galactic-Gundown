@@ -9,7 +9,6 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_player</sprite>
-    <sprite>sprites\spr_spr</sprite>
     <sprite>sprites\s_bullet</sprite>
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\s_arrow</sprite>

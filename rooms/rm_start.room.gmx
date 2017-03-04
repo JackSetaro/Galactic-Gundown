@@ -56,6 +56,7 @@
     <instance objName="o_health_" x="384" y="288" name="inst_F6CE7EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_health_" x="640" y="288" name="inst_8019263D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_room_generator" x="288" y="64" name="inst_843C35B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_enemy1" x="829" y="224" name="inst_24176C99" locked="0" code="" scaleX="0.363999992609024" scaleY="0.323671489953995" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
