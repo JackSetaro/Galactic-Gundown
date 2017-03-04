@@ -35,7 +35,6 @@ if(o_player.health &lt; 1)
 }
 if(restart)
 {
-     
      draw_set_font(fnt_options);
      draw_set_color(c_red);
      draw_text(500,500, "You Died. Press Enter to restart");
@@ -62,10 +61,10 @@ if(restart)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if(restart == 1)
-//{
-//    game_restart();
-//}
+            <string>if(restart)
+{
+    game_restart();
+}
 </string>
           </argument>
         </arguments>
