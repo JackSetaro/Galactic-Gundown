@@ -28,7 +28,7 @@
             <string>///Draw The Gameover Screen
 draw_self();
 
-if(o_player.health &lt; 1)
+if(health &lt; 1)
 {
     room_goto(rm_Gameover);
     restart = true;
@@ -61,10 +61,8 @@ if(restart)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(restart)
-{
-    game_restart();
-}
+            <string>game_restart();
+
 </string>
           </argument>
         </arguments>
