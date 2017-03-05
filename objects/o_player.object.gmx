@@ -166,6 +166,10 @@ if (global.pause == 1) exit;
 //if (health &lt; 1) instance_destroy();
 
 //if (health &lt; 1) room_restart();
+if (health &lt; 1)
+{
+    room_goto(rm_Gameover)
+}
 </string>
           </argument>
         </arguments>
