@@ -97,6 +97,7 @@ if (global.pause) exit;
             <kind>1</kind>
             <string>///Follow Player
 if (global.pause) exit;
+if (global.dead == 1) exit;
 mp_potential_step(o_player.x, o_player.y,3, true);
 
 </string>
