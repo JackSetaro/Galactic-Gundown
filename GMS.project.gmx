@@ -30,6 +30,8 @@
     <script>scripts\scr_menu.gml</script>
   </scripts>
   <fonts name="fonts">
+    <font>fonts\fnt_large</font>
+    <font>fonts\fnt_small</font>
     <font>fonts\fnt_options</font>
   </fonts>
   <objects name="objects">
@@ -38,6 +40,7 @@
     <object>objects\o_bullet</object>
     <object>objects\o_warp</object>
     <object>objects\o_health</object>
+    <object>objects\obj_gameover</object>
     <object>objects\o_enemy1</object>
     <object>objects\o_pause</object>
     <object>objects\o_room</object>

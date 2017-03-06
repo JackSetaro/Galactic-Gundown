@@ -187,10 +187,11 @@ if (global.pause == 1) exit;
           <argument>
             <kind>1</kind>
             <string>///Death
-if (health &lt; 1){
+if (health &lt; 1)
+{
 dead = 1;
+instance_create(0,0,obj_gameover);
 }
-
 //instance_destroy();
 //game_restart();
 
