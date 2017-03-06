@@ -48,10 +48,10 @@
           <argument>
             <kind>1</kind>
             <string>///Moves Health
-if (health &lt; 1)
-{
-    room_goto(rm_Gameover);
-}
+//if (health &lt; 1)
+//{
+//    room_goto(rm_Gameover);
+//}
 </string>
           </argument>
         </arguments>

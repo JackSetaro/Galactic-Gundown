@@ -10,7 +10,6 @@
   <sprites name="sprites">
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_bullet</sprite>
-    <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\s_arrow</sprite>
     <sprite>sprites\s_enemy1</sprite>
     <sprite>sprites\s_warp</sprite>
@@ -38,9 +37,8 @@
     <object>objects\obj_menu</object>
     <object>objects\o_bullet</object>
     <object>objects\o_warp</object>
-    <object>objects\o_health_</object>
+    <object>objects\o_health</object>
     <object>objects\o_enemy1</object>
-    <object>objects\obj_gameover</object>
     <object>objects\o_pause</object>
     <object>objects\o_room</object>
     <object>objects\o_warp_left</object>
@@ -52,7 +50,6 @@
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_start</room>
-    <room>rooms\rm_Gameover</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

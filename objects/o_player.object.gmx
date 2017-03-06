@@ -163,12 +163,10 @@ if (global.pause == 1) exit;
           <argument>
             <kind>1</kind>
             <string>///Death
-//if (health &lt; 1) instance_destroy();
-
-//if (health &lt; 1) room_restart();
 if (health &lt; 1)
 {
-    room_goto(rm_Gameover)
+instance_destroy();
+game_restart();
 }
 </string>
           </argument>
