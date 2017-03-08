@@ -76,21 +76,23 @@ mpos = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var move = 0;
-move -= max(keyboard_check_pressed(vk_up),keyboard_check_pressed(ord("W")),0);
-move += max(keyboard_check_pressed(vk_down),keyboard_check_pressed(ord("S")),0);
+            <string>if (global.pause)
+    {
+        var move = 0;
+        move -= max(keyboard_check_pressed(vk_up),keyboard_check_pressed(ord("W")),0);
+        move += max(keyboard_check_pressed(vk_down),keyboard_check_pressed(ord("S")),0);
 
-if (mpos != 0)
-{
-    mpos += move;
-    if (mpos &lt; 0) mpos = array_length_1d(paused) - 1;
-    if (mpos &gt; array_length_1d(paused) - 1) mpos = 0;
-}  
+            if (mpos != 0)
+                {
+                     mpos += move;
+                     if (mpos &lt; 0) mpos = array_length_1d(paused) - 1;
+                     if (mpos &gt; array_length_1d(paused) - 1) mpos = 0;
+                }  
 
-var push;
-push = max(keyboard_check_released(vk_enter), 0);
-if(push == 1) scr_paused();
-
+    var push;
+    push = max(keyboard_check_released(vk_enter), 0);
+    if(push == 1) scr_paused();
+    }
 
 </string>
           </argument>
