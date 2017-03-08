@@ -28,6 +28,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_paused.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_large</font>
