@@ -76,23 +76,22 @@ mpos = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.pause)
-    {
-        var move = 0;
-        move -= max(keyboard_check_pressed(vk_up),keyboard_check_pressed(ord("W")),0);
-        move += max(keyboard_check_pressed(vk_down),keyboard_check_pressed(ord("S")),0);
+            <string>var move = 0;
+var push = max(keyboard_check_released(vk_enter), 0);
+     if (global.pause)
+        {
+            move -= max(keyboard_check_pressed(vk_up),keyboard_check_pressed(ord("W")),0);
+            move += max(keyboard_check_pressed(vk_down),keyboard_check_pressed(ord("S")),0);
 
-            if (mpos != 0)
-                {
-                     mpos += move;
-                     if (mpos &lt; 0) mpos = array_length_1d(paused) - 1;
-                     if (mpos &gt; array_length_1d(paused) - 1) mpos = 0;
-                }  
+                if (mpos != 0)
+                    {
+                        mpos += move;
+                        if (mpos &lt; 0) mpos = array_length_1d(paused) - 1;
+                        if (mpos &gt; array_length_1d(paused) - 1) mpos = 0;
+                    }  
 
-    var push;
-    push = max(keyboard_check_released(vk_enter), 0);
-    if(push == 1) scr_paused();
-    }
+                if(push == 1) scr_paused();
+        }
 
 </string>
           </argument>
@@ -116,7 +115,9 @@ mpos = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.pause)
+            <string>var p;
+
+if (global.pause)
 {
 depth = -10000
 draw_set_halign(fa_left);
@@ -124,7 +125,6 @@ draw_set_valign(fa_middle);
 draw_set_font(fnt_options);
 draw_set_color(c_red);
 draw_sprite(sprite_index, 0, x + 16, y + mpos * space); 
-var p;
 for (p = 0; p &lt; array_length_1d(paused); p += 1)
     {
         draw_text(x + space, y + (p * space),string(paused[p]))
