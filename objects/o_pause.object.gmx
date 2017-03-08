@@ -2,9 +2,9 @@
 <object>
   <spriteName>s_arrow</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -52,7 +52,7 @@ global.pause = 0;
 paused[0] = "Resume Game"; 
 paused[1] = "Return to menu"; 
 
-space = 64;
+space = 128;
 mpos = 0;
 </string>
           </argument>
@@ -114,20 +114,21 @@ if(push == 1) scr_paused();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (global.pause)
+{
 depth = -10000
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_set_font(fnt_options);
 draw_set_color(c_red);
-    
+draw_sprite(sprite_index, 0, x + 16, y + mpos * space); 
 var p;
 for (p = 0; p &lt; array_length_1d(paused); p += 1)
     {
-        draw_text(x + space, y + (m * space),string(paused[p]))
+        draw_text(x + space, y + (p * space),string(paused[p]))
     }
+}
 
-draw_sprite(sprite_index, 0, x + 16, y + mpos * space); 
 
 
 </string>
