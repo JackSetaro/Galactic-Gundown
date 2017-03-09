@@ -3,7 +3,7 @@ var bulletSpeed = 10;
 
 if (canShoot) 
 {
-    var bid = instance_create(x, y, o_bullet); 
+    var bid = instance_create(x, y, obj_enemybullet); 
     bid.direction = dir;
     bid.speed = bulletSpeed;
     bid.image_angle = dir; 
