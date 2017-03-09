@@ -1,3 +1,6 @@
+if (global.pause) exit;
+if (global.dead) exit;
+
 var dir = point_direction(x, y, o_player.x, o_player.y);
 var bulletSpeed = 10;
 
@@ -9,7 +12,7 @@ if (canShoot)
     bid.image_angle = dir; 
     
     canShoot = false;
-    alarm[0] = 20; 
+    alarm[0] = 40; 
 }
 
 var wallid = instance_nearest(x, y, obj_wall);

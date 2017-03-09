@@ -104,6 +104,8 @@ canShoot = true;
             <kind>1</kind>
             <string>/// State tracker
 
+if (global.pause) exit;
+
 switch state
 {
 case Statetype.unaware:
