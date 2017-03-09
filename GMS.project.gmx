@@ -19,6 +19,8 @@
     <sprite>sprites\s_room</sprite>
     <sprite>sprites\s_warp_sides</sprite>
     <sprite>sprites\s_warp_top</sprite>
+    <sprite>sprites\spr_enemy2</sprite>
+    <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -29,6 +31,9 @@
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_paused.gml</script>
+    <script>scripts\enemy2_unawareAction.gml</script>
+    <script>scripts\enemy2_awareOpenAction.gml</script>
+    <script>scripts\enemy2_awareClosedAction.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_large</font>
@@ -44,12 +49,15 @@
     <object>objects\obj_gameover</object>
     <object>objects\o_enemy1</object>
     <object>objects\o_pause</object>
+    <object>objects\obj_enemybullet</object>
+    <object>objects\obj_wall</object>
     <object>objects\o_room</object>
     <object>objects\o_warp_left</object>
     <object>objects\o_warp_right</object>
     <object>objects\o_warp_top</object>
     <object>objects\o_warp_bottom</object>
     <object>objects\o_room_generator</object>
+    <object>objects\obj_enemy2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
