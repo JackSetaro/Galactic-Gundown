@@ -15,9 +15,6 @@ if (canShoot)
     alarm[0] = 40; 
 }
 
-var wallid = instance_nearest(x, y, obj_wall);
-if (distance_to_object(wallid) > 50)
-    state = Statetype.awareOpen;
 
-if(distance_to_object(o_player) > 400)
-    state = Statetype.unaware; 
+
+

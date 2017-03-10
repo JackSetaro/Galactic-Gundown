@@ -27,10 +27,6 @@
             <kind>1</kind>
             <string>/// Initialize Variables
 
-enum Statetype { unaware, awareOpen, awareCover };
-
-state = Statetype.unaware; 
-
 canShoot = true;
 </string>
           </argument>
@@ -106,20 +102,7 @@ canShoot = true;
 
 if (global.pause) exit;
 
-switch state
-{
-case Statetype.unaware:
-    enemy2_unawareAction(); 
-    break;
-    
-case Statetype.awareOpen:
-    enemy2_awareOpenAction(); 
-    break;
-    
-case Statetype.awareCover:
-    enemy2_awareClosedAction(); 
-    break;
-}
+
 </string>
           </argument>
         </arguments>
@@ -194,6 +177,68 @@ if(ehealth &lt; 1) instance_destroy();
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Shooting
+
+if (global.pause) exit;
+if (global.dead) exit;
+
+var dir = point_direction(x, y, o_player.x, o_player.y);
+var bulletSpeed = 10;
+
+if (canShoot) 
+{
+    var bid = instance_create(x, y, obj_enemybullet); 
+    bid.direction = dir;
+    bid.speed = bulletSpeed;
+    bid.image_angle = dir; 
+    
+    canShoot = false;
+    alarm[0] = 40; 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Follow Player
+if (global.pause) exit;
+if (global.dead == 1) exit;
+mp_potential_step(o_player.x, o_player.y,3, true);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="o_bullet">
       <action>
@@ -239,13 +284,10 @@ ehealth = ehealth - 45;
             <kind>1</kind>
             <string>/// Draw rotated
 
-if (state == Statetype.awareOpen || state == Statetype.awareCover) 
-{
-    var rot = point_direction(x, y, o_player.x, o_player.y);
-    draw_sprite_ext(spr_enemy2, 0, x, y, 1, 1, rot, c_white, 1);
-}
-else
-    draw_self(); 
+var rot = point_direction(x, y, o_player.x, o_player.y);
+draw_sprite_ext(spr_enemy2, 0, x, y, 1, 1, rot, c_white, 1);
+
+
 </string>
           </argument>
         </arguments>
