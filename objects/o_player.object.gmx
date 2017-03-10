@@ -160,10 +160,11 @@ if (global.pause == 1) exit;
             <kind>1</kind>
             <string>///Manual Restart
 
-//if  keyboard_check(ord('R'))
-//{
-   // instance_destroy();
-//}
+if  keyboard_check(ord('R'))
+{
+    game_restart(); 
+}
+
 </string>
           </argument>
         </arguments>
