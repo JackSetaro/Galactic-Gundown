@@ -479,11 +479,13 @@ image_angle = image_angle + 3
             <kind>1</kind>
             <string>/// Draw Healthbar
 
-var amount = 100;
+//var amount = 100;
 
 depth = -5000; 
-draw_healthbar(0, 0, 120, 15, amount, c_red, c_orange, c_green, 0, true, true);
-                
+draw_healthbar(0, 0, 120, 15, health, c_red, c_orange, c_green , 0, true, true);
+
+//Original
+//draw_healthbar(0, 0, 120, 15, health, c_red, c_orange, c_green, 0, true, true);    
 </string>
           </argument>
         </arguments>
@@ -565,6 +567,7 @@ bullet.speed = 15;
 if (dead == 1)
 {
     game_restart();
+    health = 100;
 }
 </string>
           </argument>
