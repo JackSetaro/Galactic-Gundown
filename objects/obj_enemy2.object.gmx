@@ -50,7 +50,7 @@ canShoot = true;
             <kind>1</kind>
             <string>///Health
 
-ehealth = 100; 
+e2health = 100; 
 </string>
           </argument>
         </arguments>
@@ -172,7 +172,7 @@ if (global.pause) exit;
             <kind>1</kind>
             <string>///Death 
 
-if(ehealth &lt; 1) instance_destroy();
+if(e2health &lt; 1) instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -259,7 +259,7 @@ mp_potential_step(o_player.x, o_player.y,3, true);
             <kind>1</kind>
             <string>///Damage
 
-ehealth = ehealth - 45;
+e2health = e2health - 45;
 </string>
           </argument>
         </arguments>
