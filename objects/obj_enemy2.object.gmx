@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>par_enemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -125,8 +125,8 @@ if (global.pause) exit;
             <kind>1</kind>
             <string>///Lock in Room
 
-x=clamp(x, 0, room_width - 3);
-y=clamp(y, 0, room_height - 3);
+//x=clamp(x, 0, room_width - 3);
+//y=clamp(y, 0, room_height - 3);
 </string>
           </argument>
         </arguments>

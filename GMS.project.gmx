@@ -54,6 +54,10 @@
     <object>objects\o_warp_bottom</object>
     <object>objects\o_room_generator</object>
     <object>objects\obj_enemy2</object>
+    <object>objects\obj_enemy_room</object>
+    <object>objects\obj_boss_room</object>
+    <object>objects\obj_powerup_room</object>
+    <object>objects\par_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
