@@ -99,6 +99,32 @@ global.damage = 45;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Powerups
+
+spd = 4;
+
+normal_speed = spd; 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -122,23 +148,24 @@ if (global.pause == 1) exit;
 if (dead == 1) exit;
 
 if keyboard_check(ord('W')){
-y -= 4;
+y -= spd;
 }
 
 if keyboard_check(ord('S')){
-y += 4;
+y += spd;
 }
 
 if keyboard_check(ord('A')){
-x -= 4;
+x -= spd;
 }
 
 if keyboard_check(ord('D')){
-x += 4;
+x += spd;
 }
 
 ///For Alt Speed Engine
 //speed = max(speed - 0.01, 0);
+
 </string>
           </argument>
         </arguments>
@@ -299,6 +326,29 @@ else
 {
     audio_resume_all();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_powerup_speed">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_power(5); 
 </string>
           </argument>
         </arguments>
