@@ -21,6 +21,8 @@
     <sprite>sprites\s_warp_top</sprite>
     <sprite>sprites\spr_enemy2</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\s_boss1</sprite>
+    <sprite>sprites\s_bossbullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -58,6 +60,8 @@
     <object>objects\obj_boss_room</object>
     <object>objects\obj_powerup_room</object>
     <object>objects\par_enemy</object>
+    <object>objects\o_boss1</object>
+    <object>objects\o_bossbullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>

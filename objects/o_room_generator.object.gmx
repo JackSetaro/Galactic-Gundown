@@ -103,6 +103,8 @@ if (gen == true)
             }
             
             instance_create(genx+512,geny+704,o_warp_bottom);
+            
+            rooms_generated++;
         }
         
         if (ranroom == 1 &amp;&amp; down == false)
@@ -130,6 +132,8 @@ if (gen == true)
             }
             
             instance_create(genx+512,geny,o_warp_top);
+            
+            rooms_generated++;
         }
         
         if (ranroom == 2 &amp;&amp; right == false)
@@ -157,6 +161,8 @@ if (gen == true)
             }
             
             instance_create(genx,geny+352,o_warp_left);
+            
+            rooms_generated++;
         }
         
         if (ranroom == 3 &amp;&amp; left == false)
@@ -184,9 +190,15 @@ if (gen == true)
             }
             
             instance_create(genx+960,geny+352,o_warp_right);
+            
+            rooms_generated++;
         }
     }
-    until (rooms_generated &gt;= 10)
+    until (rooms_generated &gt; 10)
+}
+else if (gen == false &amp;&amp; !instance_exists(obj_boss_room))
+{
+    instance_create(genx+512,geny+384,obj_boss_room);
 }
 </string>
           </argument>
