@@ -26,13 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>depth = -10000
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
 draw_set_font(fnt_large);
 draw_set_color(c_red);
-draw_text(room_width/2,room_height/2 - 200,"Game Over!");
+draw_text(view_xview[0] + 175,view_yview[0] + 300,"Game Over!");
 draw_set_font(fnt_small);
-draw_text(room_width/2,room_height/2 - 50,"Press enter to restart");
+draw_text(view_xview[0] + 250,view_yview[0] + 400,"Press enter to restart");
 </string>
           </argument>
         </arguments>
