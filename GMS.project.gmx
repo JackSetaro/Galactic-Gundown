@@ -24,6 +24,7 @@
     <sprite>sprites\s_boss1</sprite>
     <sprite>sprites\s_bossbullet</sprite>
     <sprite>sprites\spr_powerup_speed</sprite>
+    <sprite>sprites\spr_tp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -65,10 +66,12 @@
     <object>objects\par_enemy</object>
     <object>objects\o_boss1</object>
     <object>objects\o_bossbullet</object>
+    <object>objects\obj_tp</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_start</room>
+    <room>rooms\rm_level2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
