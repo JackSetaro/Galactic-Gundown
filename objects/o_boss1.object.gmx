@@ -25,10 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 0.75;
+            <string>///Boss Variables
+image_xscale = 0.75;
 image_yscale = 0.75;
 
-hp = 300;
+hp = 600;
 
 firing = false;
 
@@ -57,18 +58,19 @@ spawnenemy = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
+            <string>///Spawn Enemies
+randomize();
 if(spawnchance &gt;= 6)
 {
     ranloc = irandom(9)
     if (ranloc == 0)
     {
         spawnx = x-200;
-        spawn = y;
+        spawny = y;
     }
     else if (ranloc == 1)
     {
-        spawnx = x-200;
+        spawnx = x+200;
         spawny = y;
     }
      else if (ranloc == 2)
@@ -107,7 +109,8 @@ spawnenemy = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,o_bossbullet)
+            <string>///Fire Bullets
+instance_create(x,y,o_bossbullet)
 
 var nearestbbullet;
 nearestbbullet = instance_nearest(x,y,o_bossbullet);
@@ -144,7 +147,8 @@ firing = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize();
+            <string>///Take Damage
+randomize();
 
 if (place_meeting(x,y,o_bullet))
 {
