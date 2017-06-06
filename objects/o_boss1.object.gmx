@@ -60,6 +60,10 @@ spawnenemy = false;
             <kind>1</kind>
             <string>///Spawn Enemies
 randomize();
+
+spawny = 0;
+spawnx = 0;
+
 if(spawnchance &gt;= 6)
 {
     ranloc = irandom(9)
