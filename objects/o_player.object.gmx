@@ -330,7 +330,7 @@ else
           <argument>
             <kind>1</kind>
             <string>///Damage Powerup 
-scr_damage(+10)
+scr_damage(global.dmg + 10); 
 </string>
           </argument>
         </arguments>
@@ -428,7 +428,8 @@ scr_damage(+10)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_power(5); 
+            <string>///Increase Speed
+scr_power(spd + .25); 
 </string>
           </argument>
         </arguments>
