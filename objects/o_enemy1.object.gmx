@@ -172,7 +172,7 @@ if(ehealth &lt; 1) instance_destroy();
           <argument>
             <kind>1</kind>
             <string>///Damage
-ehealth = ehealth - global.damage;
+ehealth = ehealth - global.dmg;
 </string>
           </argument>
         </arguments>

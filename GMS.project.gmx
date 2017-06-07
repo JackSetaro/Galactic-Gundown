@@ -25,6 +25,7 @@
     <sprite>sprites\s_bossbullet</sprite>
     <sprite>sprites\spr_powerup_speed</sprite>
     <sprite>sprites\spr_tp</sprite>
+    <sprite>sprites\spr_powerup_damage</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -34,6 +35,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_power.gml</script>
+    <script>scripts\scr_damage.gml</script>
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_paused.gml</script>
   </scripts>
@@ -55,6 +57,7 @@
     <object>objects\obj_wall</object>
     <object>objects\o_room</object>
     <object>objects\o_warp_left</object>
+    <object>objects\obj_powerup_damage</object>
     <object>objects\o_warp_right</object>
     <object>objects\o_warp_top</object>
     <object>objects\o_warp_bottom</object>
