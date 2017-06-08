@@ -158,7 +158,7 @@ if (place_meeting(x,y,o_bullet))
 {
     var nearestbullet;
     nearestbullet = instance_nearest(x,y,o_bullet);
-    hp -= global.damage;
+    hp -= global.dmg;
     with (nearestbullet)
     {
         instance_destroy();

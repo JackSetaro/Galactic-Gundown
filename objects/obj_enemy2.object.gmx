@@ -259,7 +259,7 @@ mp_potential_step(o_player.x, o_player.y,3, true);
             <kind>1</kind>
             <string>///Damage
 
-e2health = e2health - 45;
+e2health = e2health - global.dmg;
 </string>
           </argument>
         </arguments>
