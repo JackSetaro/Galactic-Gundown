@@ -25,6 +25,8 @@
     <sprite>sprites\s_bossbullet</sprite>
     <sprite>sprites\spr_powerup_speed</sprite>
     <sprite>sprites\spr_tp</sprite>
+    <sprite>sprites\spr_slider</sprite>
+    <sprite>sprites\spr_bar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -67,6 +69,8 @@
     <object>objects\o_boss1</object>
     <object>objects\o_bossbullet</object>
     <object>objects\obj_tp</object>
+    <object>objects\obj_vslider</object>
+    <object>objects\obj_vbar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
