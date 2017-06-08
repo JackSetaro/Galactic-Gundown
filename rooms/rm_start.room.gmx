@@ -56,6 +56,7 @@
     <instance objName="o_pause" x="150" y="250" name="inst_BD6DF5FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup_damage" x="128" y="480" name="inst_8D240DDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup_speed" x="256" y="608" name="inst_C1F8A05D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_healthpack" x="224" y="512" name="inst_4E8AE015" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
