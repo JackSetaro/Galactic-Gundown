@@ -37,8 +37,6 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_power.gml</script>
-    <script>scripts\scr_damage.gml</script>
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_paused.gml</script>
   </scripts>
