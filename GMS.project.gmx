@@ -62,6 +62,7 @@
     <object>objects\obj_powerup_damage</object>
     <object>objects\o_warp_right</object>
     <object>objects\o_warp_top</object>
+    <object>objects\obj_fullscreen</object>
     <object>objects\o_warp_bottom</object>
     <object>objects\o_room_generator</object>
     <object>objects\obj_enemy2</object>
