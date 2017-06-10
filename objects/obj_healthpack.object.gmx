@@ -30,9 +30,10 @@ if(o_player.health &gt; 99)
 {
 exit; 
 }
-else if (place_meeting(o_player.x,o_player.y, o_player))
+else if (place_meeting(x,y, o_player))
 {
-instance_destroy(); 
+instance_destroy();
+o_player.health = 100; 
 }
 
 </string>
