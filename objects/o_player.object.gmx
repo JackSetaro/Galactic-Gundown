@@ -403,7 +403,8 @@ scr_damage(global.dmg + 10);
           <argument>
             <kind>1</kind>
             <string>///Give Health
-scr_healthpack(o_player.health + 25); 
+
+o_player.health = (o_player.health + 25); 
 </string>
           </argument>
         </arguments>
