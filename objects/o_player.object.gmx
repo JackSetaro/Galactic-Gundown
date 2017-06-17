@@ -595,46 +595,6 @@ draw_self();
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Gui on pickup
-var near;
-near = instance_nearest(x,y,obj_powerup_speed);
-str1 = "Speed Up!";  
-
-if(!near)
-{
-alarm[0] = true; 
-depth = -10000
-draw_set_font(fnt_large);
-draw_set_color(c_red);
-draw_text(view_xview[0] + 185,view_yview[0] + 300, str1);
-}
-
-if (alarm[0] == true)
-{
-str1 = false; 
-}
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="9" enumb="32">
       <action>
