@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xx = 0;
+            <string>///Variables
+xx = 0;
 grab = false;
 percentage = 0;
 </string>
@@ -56,7 +57,7 @@ if (!mouse_check_button(mb_left))
     grab = false;
 }
 
-if (grab == false)
+if (grab = false)
 {
     exit;
 }
@@ -106,7 +107,7 @@ percentage = round(((x-leftLimit)/(rightLimit-leftLimit))*100);
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
+    <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>

@@ -53,8 +53,8 @@
     <object>objects\o_bullet</object>
     <object>objects\o_warp</object>
     <object>objects\obj_gameover</object>
-    <object>objects\o_enemy1</object>
     <object>objects\o_pause</object>
+    <object>objects\o_enemy1</object>
     <object>objects\obj_enemybullet</object>
     <object>objects\obj_powerup_speed</object>
     <object>objects\obj_wall</object>
