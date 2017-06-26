@@ -95,13 +95,65 @@ audio_play_sound(Level_theme,1,true);
             <kind>1</kind>
             <string>///Powerups
 
-spd = 4;
+global.spd = 4;
 global.dmg = 45;
 
-normal_speed = spd; 
+normal_speed = global.spd; 
 global.normal_dmg = global.dmg; 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw
+
+draw = false;
+draw1 = false; 
+draw2 = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw
+
+draw = false; 
+draw1 = false;
+draw2 = false;  
 </string>
           </argument>
         </arguments>
@@ -129,19 +181,19 @@ if (global.pause == 1) exit;
 if (dead == 1) exit;
 
 if keyboard_check(ord('W')){
-y -= spd;
+y -= global.spd;
 }
 
 if keyboard_check(ord('S')){
-y += spd;
+y += global.spd;
 }
 
 if keyboard_check(ord('A')){
-x -= spd;
+x -= global.spd;
 }
 
 if keyboard_check(ord('D')){
-x += spd;
+x += global.spd;
 }
 
 ///For Alt Speed Engine
@@ -378,8 +430,13 @@ health = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Damage Powerup 
-scr_damage(global.dmg + 10); 
+            <string>///Draw
+
+if (alarm[0] == -1)
+{
+    draw1 = true;
+    alarm[0] = room_speed * 3;     
+}
 </string>
           </argument>
         </arguments>
@@ -402,9 +459,13 @@ scr_damage(global.dmg + 10);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Give Health
+            <string>///Draw
 
-o_player.health = (o_player.health + 25); 
+if (alarm[0] == -1)
+{
+    draw2 = true;
+    alarm[0] = room_speed * 3;     
+}
 </string>
           </argument>
         </arguments>
@@ -479,8 +540,14 @@ o_player.health = (o_player.health + 25);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Increase Speed
-scr_power(spd + .25); 
+            <string>///Draw 
+
+if (alarm[0] == -1)
+{
+    draw = true;
+    alarm[0] = room_speed * 3;     
+}
+
 </string>
           </argument>
         </arguments>
@@ -608,6 +675,92 @@ image_angle = image_angle - 3
 if (global.pause == 1) exit;
 if (dead == 1) exit;
 image_angle = image_angle + 3
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Speedup!
+
+if (draw)
+{
+    draw_set_font(fnt_large);
+    draw_set_color(c_red);
+    draw_text(200, 300, "Speed Up!");
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Damage Up!
+
+if (draw1)
+{
+    draw_set_font(fnt_large);
+    draw_set_color(c_red);
+    draw_text(150, 300, "Damage Up!");
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Health Up!
+
+if (draw2)
+{
+    draw_set_font(fnt_large);
+    draw_set_color(c_red);
+    draw_text(150, 300, "Health +25");
+}
 </string>
           </argument>
         </arguments>

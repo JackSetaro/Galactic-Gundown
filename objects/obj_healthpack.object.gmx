@@ -32,8 +32,8 @@ exit;
 }
 else if (place_meeting(x,y, o_player))
 {
-instance_destroy();
-o_player.health = 100; 
+with(self) instance_destroy();
+o_player.health = (o_player.health + 25); 
 }
 
 </string>
