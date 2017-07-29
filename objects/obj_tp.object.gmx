@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 1.50;
+            <string>///Scale Image
+image_xscale = 1.50;
 image_yscale = 1.50;
 
 </string>
@@ -58,6 +59,7 @@ with (o_player)
 
 view_xview[0] = o_player.x
 view_yview[0] = o_player.y
+
 </string>
           </argument>
         </arguments>

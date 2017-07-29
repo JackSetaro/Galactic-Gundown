@@ -26,14 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///Health pickup control
-if(o_player.health &gt; 99)
+if(o_player.currentHp &gt; 99)
 {
 exit; 
 }
 else if (place_meeting(x,y, o_player))
 {
 with(self) instance_destroy();
-o_player.health = (o_player.health + 25); 
+o_player.currentHp = (o_player.currentHp + 25); 
 }
 
 </string>
