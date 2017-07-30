@@ -732,7 +732,7 @@ health = health - 5;
           <argument>
             <kind>1</kind>
             <string>///Damage
-health = health - 10
+health = health - 25
 </string>
           </argument>
         </arguments>

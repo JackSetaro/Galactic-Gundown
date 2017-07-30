@@ -73,6 +73,7 @@
       <object>objects\obj_enemy_room</object>
       <object>objects\o_room_generator</object>
       <object>objects\o_room_generator_L2</object>
+      <object>objects\o_room_generator_L3</object>
       <object>objects\o_warp_bottom</object>
       <object>objects\o_warp_top</object>
       <object>objects\o_warp_right</object>
