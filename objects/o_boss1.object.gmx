@@ -59,6 +59,7 @@ spawnenemy = false;
           <argument>
             <kind>1</kind>
             <string>///Spawn Enemies
+
 randomize();
 
 spawny = 0;
@@ -114,6 +115,7 @@ spawnenemy = false;
           <argument>
             <kind>1</kind>
             <string>///Fire Bullets
+
 instance_create(x,y,o_bossbullet)
 
 var nearestbbullet;
