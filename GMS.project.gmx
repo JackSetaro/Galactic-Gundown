@@ -29,12 +29,14 @@
     <sprite>sprites\spr_slider</sprite>
     <sprite>sprites\spr_bar</sprite>
     <sprite>sprites\spr_healthpack</sprite>
+    <sprite>sprites\s_pewpew</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\mars_background</background>
+    <background>background\mercury_background</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -51,7 +53,6 @@
     <object>objects\o_bullet</object>
     <object>objects\o_enemy1</object>
     <object>objects\obj_enemybullet</object>
-    <object>objects\o_boss2</object>
     <object>objects\obj_powerup_speed</object>
     <object>objects\obj_healthpack</object>
     <object>objects\obj_powerup_damage</object>
@@ -59,6 +60,7 @@
     <object>objects\obj_enemy2</object>
     <object>objects\par_enemy</object>
     <object>objects\o_boss1</object>
+    <object>objects\o_boss2</object>
     <object>objects\o_bossbullet</object>
     <objects name="Rooms">
       <object>objects\obj_tp4</object>

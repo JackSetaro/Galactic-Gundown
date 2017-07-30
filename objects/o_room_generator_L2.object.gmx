@@ -196,9 +196,9 @@ if (gen == true)
     }
     until (rooms_generated &gt; 15)
 }
-else if (gen == false &amp;&amp; !instance_exists(obj_boss_room))
+else if (gen == false &amp;&amp; !instance_exists(obj_boss_room_L2))
 {
-    instance_create(genx+512,geny+384,obj_boss_room);
+    instance_create(genx+512,geny+384,obj_boss_room_L2);
 }
 </string>
           </argument>
