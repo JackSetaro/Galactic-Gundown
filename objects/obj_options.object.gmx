@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Gui
-options[1] = "Sound";
-options[2] = "Main Menu";
+options[0] = "Sound";
+options[1] = "Main Menu";
 
 space = 100;
 mpos = 0; 
