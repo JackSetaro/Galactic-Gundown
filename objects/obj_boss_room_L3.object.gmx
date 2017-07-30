@@ -29,7 +29,7 @@
 spawned = false;
 
 var nearestenemy;
-aliveboss = instance_nearest(x, y ,o_boss2);
+aliveboss = instance_nearest(x, y ,o_boss3);
 
 if (distance_to_object(aliveboss) &lt; 5000)
 {
@@ -95,13 +95,13 @@ else
             <kind>1</kind>
             <string>if (distance_to_object(o_player)&lt;400 &amp;&amp; spawned == false)
 {
-    instance_create(x,y-50,o_boss2);
+    instance_create(x,y-50,o_boss3);
     spawned = true;
 }
 
-if (instance_exists(o_boss2))
+if (instance_exists(o_boss3))
 {
-    if (distance_to_object(o_boss2) &lt; 5000)
+    if (distance_to_object(o_boss3) &lt; 5000)
     {
         doorslocked = true;
         with(o_warp)
