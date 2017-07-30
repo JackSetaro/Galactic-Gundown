@@ -56,12 +56,6 @@
     <object>objects\obj_healthpack</object>
     <object>objects\obj_powerup_damage</object>
     <object>objects\obj_fullscreen</object>
-<<<<<<< HEAD
-    <object>objects\o_warp_bottom</object>
-    <object>objects\object32</object>
-    <object>objects\o_room_generator</object>
-=======
->>>>>>> 86902d524295d820c99539ae5f91f65255aea9a8
     <object>objects\obj_enemy2</object>
     <object>objects\par_enemy</object>
     <object>objects\o_boss1</object>
@@ -96,7 +90,6 @@
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_start</room>
-    <room>rooms\rm_options</room>
     <room>rooms\rm_level2</room>
     <room>rooms\rm_level3</room>
     <room>rooms\rm_level4</room>
