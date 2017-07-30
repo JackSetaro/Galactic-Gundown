@@ -51,6 +51,7 @@
     <object>objects\o_bullet</object>
     <object>objects\o_enemy1</object>
     <object>objects\obj_enemybullet</object>
+    <object>objects\o_boss2</object>
     <object>objects\obj_powerup_speed</object>
     <object>objects\obj_healthpack</object>
     <object>objects\obj_powerup_damage</object>
@@ -66,8 +67,10 @@
       <object>objects\obj_tp2</object>
       <object>objects\obj_powerup_room</object>
       <object>objects\obj_boss_room</object>
+      <object>objects\obj_boss_room_L2</object>
       <object>objects\obj_enemy_room</object>
       <object>objects\o_room_generator</object>
+      <object>objects\o_room_generator_L2</object>
       <object>objects\o_warp_bottom</object>
       <object>objects\o_warp_top</object>
       <object>objects\o_warp_right</object>
