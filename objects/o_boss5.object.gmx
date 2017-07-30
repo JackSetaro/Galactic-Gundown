@@ -85,15 +85,15 @@ if (spawnenemy == false)
     spawnenemy = true;
 }
 
-if (hp &lt; 1)
-{
-    instance_create(o_boss5.x, o_boss5.y, obj_tp4)
-    instance_destroy();
+//if (hp &lt; 1)
+//{
+//    instance_create(o_boss5.x, o_boss5.y, obj_tp4)
+//    instance_destroy();
    // with(o_player)
    // {
    //     room_goto(rm_level2)
    //}
-}
+//}
 
 
 </string>

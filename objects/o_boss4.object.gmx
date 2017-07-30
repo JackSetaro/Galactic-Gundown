@@ -87,7 +87,7 @@ if (spawnenemy == false)
 
 if (hp &lt; 1)
 {
-    instance_create(o_boss2.x, o_boss2.y, obj_tp2)
+    instance_create(o_boss4.x, o_boss4.y, obj_tp4)
     instance_destroy();
    // with(o_player)
    // {
