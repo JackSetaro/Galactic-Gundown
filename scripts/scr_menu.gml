@@ -5,6 +5,16 @@ switch (mpos)
     room_goto_next();
     break; 
    } 
-    case 1: game_end(); break;
-    default: break;
+    case 1:
+   { 
+   room_goto(rm_options)
+   break;
+   }
+   case 2:
+   {
+   game_end(); break;
+   }
+   
+   default: break;
 }
+
