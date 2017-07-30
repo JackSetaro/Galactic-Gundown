@@ -28,6 +28,7 @@
             <string>///Menu stuff
 menu[0] = "Start";
 menu[1] = "Quit";
+menu[2] = "Options";
 //vertical spacing
 space = 100;
 mpos = 0;
