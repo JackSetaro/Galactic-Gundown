@@ -4,6 +4,7 @@ switch (mpos)
    {
     room_goto_next();
     global.level = 1;
+    global.ingame = 1;
     break; 
    } 
     case 1:

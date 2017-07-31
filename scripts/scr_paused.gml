@@ -15,6 +15,7 @@ switch (mpos)
     {
       room_goto(rm_Menu);
       //global.options = 0;
+      global.ingame = 0;
       game_restart(); 
       break;
     }
