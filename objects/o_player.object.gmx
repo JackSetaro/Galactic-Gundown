@@ -923,10 +923,17 @@ if (draw2)
             <string>/// Draw Healthbar
 
 //var amount = 100;
+if (global.options == 1)
+{
+    exit;
+}
+else
+{
 
 depth = -5000; 
 draw_healthbar(view_xview[0], view_yview[0],view_xview[0] + 120, view_yview[0] + 15, health, c_red, c_orange, c_green , 0, true, true);
 
+}
 //Original
 //draw_healthbar(0, 0, 120, 15, health, c_red, c_orange, c_green, 0, true, true);    
 
