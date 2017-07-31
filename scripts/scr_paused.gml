@@ -14,7 +14,8 @@ switch (mpos)
     case 2:
     {
       room_goto(rm_Menu);
-      global.options = 0;
+      //global.options = 0;
+      game_restart(); 
       break;
     }
      default: break;  
