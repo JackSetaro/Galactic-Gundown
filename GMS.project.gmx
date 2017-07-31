@@ -63,9 +63,12 @@
     <object>objects\obj_powerup_speed</object>
     <object>objects\obj_healthpack</object>
     <object>objects\obj_powerup_damage</object>
+    <object>objects\obj_controller_sound</object>
     <object>objects\obj_fullscreen</object>
+    <object>objects\obj_bar</object>
     <object>objects\obj_enemy2</object>
     <object>objects\par_enemy</object>
+    <object>objects\obj_slider</object>
     <object>objects\o_boss1</object>
     <object>objects\o_boss2</object>
     <object>objects\o_boss3</object>
