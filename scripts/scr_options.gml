@@ -7,6 +7,10 @@ switch (mpos)
     }
     case 1:
     {
+    break; 
+    }
+    case 2:
+    {
     //room_goto(rm_Menu);
     game_restart(); 
     break;
