@@ -8,6 +8,7 @@ switch (mpos)
     case 1:
     {
     room_goto(rm_Menu);
+    global.options = 0;
     break;
     }
     

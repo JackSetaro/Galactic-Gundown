@@ -28,6 +28,7 @@
             <string>///Paused
 global.pause = 0;
 
+global.options = 0;
 </string>
           </argument>
         </arguments>
@@ -116,7 +117,14 @@ var push = max(keyboard_check_released(vk_enter), 0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var p;
+            <string>if (global.options == 1)
+{
+    exit
+}
+else
+{
+
+var p;
 
 if (global.pause)
 {
@@ -130,6 +138,7 @@ for (p = 0; p &lt; array_length_1d(paused); p += 1)
     }
 }
 
+}
 
 
 </string>
