@@ -7,7 +7,7 @@ switch (mpos)
     }
     case 1:
     {
-    room_goto(rm_options);
+    room_goto(rm_options_game);
     global.options = 1;
     break;
     }

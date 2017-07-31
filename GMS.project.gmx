@@ -46,6 +46,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_options.gml</script>
+    <script>scripts\scr_options_game.gml</script>
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_paused.gml</script>
   </scripts>
@@ -100,6 +101,7 @@
       <object>objects\o_pause</object>
       <object>objects\obj_gameover</object>
       <object>objects\obj_options</object>
+      <object>objects\obj_options_game</object>
       <object>objects\obj_menu</object>
       <object>objects\obj_vbar</object>
       <object>objects\obj_vslider</object>
@@ -111,6 +113,7 @@
     <room>rooms\rm_level2</room>
     <room>rooms\rm_sound</room>
     <room>rooms\rm_options</room>
+    <room>rooms\rm_options_game</room>
     <room>rooms\rm_level3</room>
     <room>rooms\rm_level4</room>
     <room>rooms\rm_level5</room>

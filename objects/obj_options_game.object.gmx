@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Gui
-options[0] = "Sound";
-options[1] = "Main Menu";
+options_game[0] = "Sound";
+options_game[1] = "Resume Game"
+options_game[2] = "Main Menu";
 
 space = 100;
 mpos = 0; 
@@ -62,8 +63,8 @@ move += max(keyboard_check_pressed(vk_down),keyboard_check_pressed(ord("S")),0);
 if (move != 0)
 {
     mpos += move;
-    if (mpos &lt; 0) mpos = array_length_1d(options) - 1; 
-    if (mpos &gt; array_length_1d(options) - 1) mpos = 0; 
+    if (mpos &lt; 0) mpos = array_length_1d(options_game) - 1; 
+    if (mpos &gt; array_length_1d(options_game) - 1) mpos = 0; 
 }
 
 var push;
@@ -99,9 +100,9 @@ draw_set_font(fnt_options);
 draw_set_color(c_red);
 
 var m;
-for (m = 0; m &lt; array_length_1d(options); m += 1)
+for (m = 0; m &lt; array_length_1d(options_game); m += 1)
 {
-    draw_text(x + space, y + (m* space),string(options[m])) 
+    draw_text(x + space, y + (m* space),string(options_game[m])) 
 }
 
 draw_sprite(sprite_index, 0, x + 16, y + mpos * space); 
