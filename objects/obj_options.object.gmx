@@ -27,7 +27,10 @@
             <kind>1</kind>
             <string>///Gui
 options[0] = "Sound";
+if (global.level != 0)
+{
 options[1] = "Resume Game"
+}
 options[2] = "Main Menu";
 
 space = 100;

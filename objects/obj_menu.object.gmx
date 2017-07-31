@@ -33,6 +33,8 @@ menu[2] = "Quit";
 space = 100;
 mpos = 0;
 
+global.level = 0;
+
 </string>
           </argument>
         </arguments>

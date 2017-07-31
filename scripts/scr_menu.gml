@@ -3,6 +3,7 @@ switch (mpos)
    case 0: 
    {
     room_goto_next();
+    global.level = 1;
     break; 
    } 
     case 1:
