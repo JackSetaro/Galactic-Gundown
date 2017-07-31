@@ -169,7 +169,7 @@ grab = false;
           <argument>
             <kind>1</kind>
             <string>//draw sprite
-draw_sprite_ext(spr_slider, 0, x, y, 1, 1, 0, c_white, 0); //the alph may be messed up
+draw_sprite_ext(spr_slider, 0, x, y, 1, 1, 0, c_white, 1); 
 
 //and values
 draw_set_colour(c_lime)
