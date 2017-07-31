@@ -2,16 +2,18 @@ switch (mpos)
 {
     case 0: 
     {
-       global.pause = 0;
-       break;
+    global.pause = 0;
+    break;
     }
     case 1:
     {
-        game_restart();
-        break;
+    room_goto(rm_options);
+    break;
     }
-    default: 
+    case 2:
     {
-        break;
+      room_goto(rm_Menu);
+      break;
     }
+     default: break;  
 }
