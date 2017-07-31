@@ -32,6 +32,8 @@ grab = false;
 can_click = true;
 clicked = false;
 percentage = 100;
+left_Limit = 0;
+right_Limit = 100;
 </string>
           </argument>
         </arguments>
