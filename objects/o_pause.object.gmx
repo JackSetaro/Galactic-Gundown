@@ -80,7 +80,14 @@ mpos = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var move = 0;
+            <string>if (global.options == 1)
+{
+    exit
+}
+else
+{
+
+var move = 0;
 var push = max(keyboard_check_released(vk_enter), 0);
      if (global.pause)
         {
@@ -96,7 +103,7 @@ var push = max(keyboard_check_released(vk_enter), 0);
 
                 if(push == 1) scr_paused();
         }
-
+}
 </string>
           </argument>
         </arguments>
