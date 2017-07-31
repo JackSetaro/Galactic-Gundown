@@ -51,8 +51,8 @@ global.options = 0;
             <kind>1</kind>
             <string>///GUI
 paused[0] = "Resume Game"; 
-paused[1] = "Go Back"; 
-paused[2] = "Main Menu"
+paused[1] = "Options"; 
+paused[2] = "Restart"
 
 space = 128;
 mpos = 0;
