@@ -921,11 +921,17 @@ if (draw2)
           <argument>
             <kind>1</kind>
             <string>///Current Floor
+if (global.options == 1)
+{
+ exit;
+}
+else
+{
 depth = -5000; 
 draw_set_colour(c_lime);
 draw_set_font(fnt_small); 
 draw_text(view_xview[0] + 770, view_yview[0] + 25, "Level " + string(global.level));
-
+}
 </string>
           </argument>
         </arguments>
