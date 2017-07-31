@@ -7,6 +7,10 @@ switch (mpos)
     }
     case 1:
     {
+    if (global.level = 1)
+    {
+        room_goto(rm_start);
+    }
     break; 
     }
     case 2:

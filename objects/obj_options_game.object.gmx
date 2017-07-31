@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Gui
 options_game[0] = "Sound";
-options_game[1] = "Resume Game"
+options_game[1] = "Resume Game";
 options_game[2] = "Main Menu";
 
 space = 100;
