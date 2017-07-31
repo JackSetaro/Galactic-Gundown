@@ -55,7 +55,8 @@ right_Limit = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale = 0.50;
+            <string>///Image Scaling
+image_xscale = 0.50;
 image_yscale = 0.50;
 </string>
           </argument>
@@ -79,7 +80,7 @@ image_yscale = 0.50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Stuff
+            <string>///Mosue Locking
 
 //if the mouse button is not clicked
 
@@ -161,7 +162,8 @@ grab = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (can_click) 
+            <string>///Clicking
+if (can_click) 
 {
         //we're grabbing this slider
         grab = true; 
