@@ -34,8 +34,8 @@ leftLimit = x-(sprite_get_width(spr_bar)/2)+30;
 
 //create the slider for this bar and assign it some values
 a = instance_create(x,y,obj_slider);
-a.image_xscale = 1;
-a.image_yscale = 1;
+a.image_xscale = .75;
+a.image_yscale = .75;
 a.barLength = sprite_get_width(spr_slider);
 a.rightLimit = rightLimit; 
 a.leftLimit = leftLimit;
@@ -45,29 +45,6 @@ a.percentage = global.musicVolume*100;
 a.x = a.leftLimit + ((a.percentage/100) * (a.rightLimit-a.leftLimit));
 a.clicked = false;
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Image Scaling
-image_xscale = 0.75;
-image_yscale = 0.75;
 </string>
           </argument>
         </arguments>
