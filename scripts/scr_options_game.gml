@@ -11,6 +11,7 @@ switch (mpos)
     {
         room_goto(rm_start);
     }
+    global.options = 0;
     break; 
     }
     case 2:
