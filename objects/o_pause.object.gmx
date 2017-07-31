@@ -164,6 +164,12 @@ for (p = 0; p &lt; array_length_1d(paused); p += 1)
           <argument>
             <kind>1</kind>
             <string>///Pause the Game
+if (global.options == 1)
+{
+exit
+}
+else
+{
 if (global.pause == 0)
 {
     global.pause = 1;
@@ -171,6 +177,8 @@ if (global.pause == 0)
 else
 {
     global.pause = 0;
+}
+
 }
 </string>
           </argument>
