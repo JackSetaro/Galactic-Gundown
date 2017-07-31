@@ -69,7 +69,7 @@ if (gen == true)
     {
         ranroom = irandom(3)
         
-        rantype = irandom(1)
+        rantype = irandom(2)
         
         rooms_generated ++;
         
@@ -97,6 +97,10 @@ if (gen == true)
             {
                 instance_create(genx+512,geny+384,obj_enemy_room);
             }
+            //else if (rantype == 2)
+            //{
+            //    instance_create(genx+512,geny+384,obj_powerup_room);
+            //}
             
             instance_create(genx+512,geny+704,o_warp_bottom);
             
@@ -122,6 +126,10 @@ if (gen == true)
             {
                 instance_create(genx+512,geny-384,obj_enemy_room);
             }
+            //else if (rantype == 2)
+            //{
+            //    instance_create(genx+512,geny-384,obj_powerup_room);
+            //}
             
             instance_create(genx+512,geny,o_warp_top);
             
@@ -147,6 +155,10 @@ if (gen == true)
             {
                 instance_create(genx+512,geny+384,obj_enemy_room);
             }
+            //else if (rantype == 2)
+            //{
+            //    instance_create(genx+512,geny+384,obj_powerup_room);
+            //}
             
             instance_create(genx,geny+352,o_warp_left);
             
@@ -172,6 +184,10 @@ if (gen == true)
             {
                 instance_create(genx+512,geny+384,obj_enemy_room);
             }
+            //else if (rantype == 2)
+            //{
+            //    instance_create(genx+512,geny+384,obj_powerup_room);
+            //}
             
             instance_create(genx+960,geny+352,o_warp_right);
             

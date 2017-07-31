@@ -173,7 +173,7 @@ if (firing == false &amp;&amp; global.pause == 0)
     firing = true;
 }
 
-if (spawnenemy == false)
+if (spawnenemy == false &amp;&amp; global.pause == 0)
 {
     spawnchance = irandom(10)
     alarm[1] = 150;
