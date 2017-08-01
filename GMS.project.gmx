@@ -8,6 +8,7 @@
     <sound>sound\Level_theme</sound>
     <sound>sound\quietbeggar</sound>
     <sound>sound\You_Win</sound>
+    <sound>sound\sans_fight</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_player</sprite>
@@ -78,7 +79,6 @@
     <object>objects\o_boss2</object>
     <object>objects\o_boss3</object>
     <object>objects\o_boss4</object>
-    <object>objects\o_boss5_test</object>
     <object>objects\o_boss5</object>
     <object>objects\o_bossbullet</object>
     <objects name="Rooms">
