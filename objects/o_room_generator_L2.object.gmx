@@ -69,8 +69,6 @@ if (gen == true)
     {
         ranroom = irandom(3)
         
-        rantype = irandom(1)
-        
         rooms_generated ++;
         
         if (rooms_generated &gt;= 15)
@@ -89,14 +87,7 @@ if (gen == true)
             geny -= 768;
             instance_create(genx,geny,o_room);
             
-            if (rantype == 0)
-            {
-                //normal room
-            }
-            else if (rantype == 1)
-            {
-                instance_create(genx+512,geny+384,obj_enemy_room);
-            }
+            instance_create(genx+512,geny+384,obj_enemy_room);
             
             instance_create(genx+512,geny+704,o_warp_bottom);
             
@@ -113,15 +104,8 @@ if (gen == true)
             instance_create(genx+512,geny+704,o_warp_bottom);
             geny += 768;
             instance_create(genx,geny,o_room);
-            
-            if (rantype == 0)
-            {
-                //normal room
-            }
-            else if (rantype == 1)
-            {
-                instance_create(genx+512,geny-384,obj_enemy_room);
-            }
+
+            instance_create(genx+512,geny-384,obj_enemy_room);
             
             instance_create(genx+512,geny,o_warp_top);
             
@@ -138,15 +122,8 @@ if (gen == true)
             instance_create(genx+960,geny+352,o_warp_right);
             genx += 1024;
             instance_create(genx,geny,o_room);
-            
-               if (rantype == 0)
-            {
-                //normal room
-            }
-            else if (rantype == 1)
-            {
-                instance_create(genx+512,geny+384,obj_enemy_room);
-            }
+
+            instance_create(genx+512,geny+384,obj_enemy_room);
             
             instance_create(genx,geny+352,o_warp_left);
             
@@ -163,15 +140,8 @@ if (gen == true)
             instance_create(genx,geny+352,o_warp_left);
             genx -= 1024;
             instance_create(genx,geny,o_room);
-            
-               if (rantype == 0)
-            {
-                //normal room
-            }
-            else if (rantype == 1)
-            {
-                instance_create(genx+512,geny+384,obj_enemy_room);
-            }
+
+            instance_create(genx+512,geny+384,obj_enemy_room);
             
             instance_create(genx+960,geny+352,o_warp_right);
             
