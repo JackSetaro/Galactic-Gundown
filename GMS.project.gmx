@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\Level_theme</sound>
     <sound>sound\quietbeggar</sound>
+    <sound>sound\You_Win</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_player</sprite>
@@ -67,6 +68,7 @@
     <object>objects\obj_powerup_damage</object>
     <object>objects\obj_controller_sound</object>
     <object>objects\obj_fullscreen</object>
+    <object>objects\obj_ending</object>
     <object>objects\obj_bar</object>
     <object>objects\obj_enemy2</object>
     <object>objects\par_enemy</object>
@@ -75,6 +77,7 @@
     <object>objects\o_boss2</object>
     <object>objects\o_boss3</object>
     <object>objects\o_boss4</object>
+    <object>objects\o_boss5_test</object>
     <object>objects\o_boss5</object>
     <object>objects\o_bossbullet</object>
     <objects name="Rooms">
