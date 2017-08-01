@@ -104,7 +104,7 @@ if (instance_exists(o_boss5))
     if (distance_to_object(o_boss5) &lt; 5000)
     {
         doorslocked = true;
-        with(o_warp)
+        with(par_doors)
         {
             image_index = 1;
         }
@@ -113,7 +113,7 @@ if (instance_exists(o_boss5))
     else
     {
         doorlocked = false;
-        with(o_warp)
+        with(par_doors)
         {
             image_index = 0;
         }

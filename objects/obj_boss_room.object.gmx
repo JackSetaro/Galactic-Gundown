@@ -28,7 +28,7 @@
             <string>///Spawned
 spawned = false;
 
-/*
+
 var nearestenemy;
 aliveboss = instance_nearest(x, y ,o_boss1);
 
@@ -73,7 +73,7 @@ else
         image_index = 0;
     }
 }
-*/   
+  
 </string>
           </argument>
         </arguments>
