@@ -126,7 +126,7 @@ global.firedir += 30;
 with (nearestbbullet)
 {
     direction = global.firedir;
-    speed = 5;
+    speed = 8.5;
 }
 
 firing = false;
@@ -160,7 +160,7 @@ if (place_meeting(x,y,o_bullet))
 {
     var nearestbullet;
     nearestbullet = instance_nearest(x,y,o_bullet);
-    hp -= global.dmg/6;
+    hp -= global.dmg/20;
     with (nearestbullet)
     {
         instance_destroy();
@@ -169,7 +169,7 @@ if (place_meeting(x,y,o_bullet))
 
 if (firing == false &amp;&amp; global.pause == 0)
 {
-    alarm[0] = 10;
+    alarm[0] = 2;
     firing = true;
 }
 
