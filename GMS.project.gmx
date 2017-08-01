@@ -49,6 +49,7 @@
   <scripts name="scripts">
     <script>scripts\scr_options.gml</script>
     <script>scripts\scr_options_game.gml</script>
+    <script>scripts\scr_control.gml</script>
     <script>scripts\scr_sound.gml</script>
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_paused.gml</script>
@@ -110,7 +111,9 @@
       <object>objects\o_pause</object>
       <object>objects\obj_gameover</object>
       <object>objects\obj_options</object>
+      <object>objects\obj_control</object>
       <object>objects\o_sound</object>
+      <object>objects\obj_controls_draw</object>
       <object>objects\obj_options_game</object>
       <object>objects\obj_menu</object>
       <object>objects\obj_vbar</object>
