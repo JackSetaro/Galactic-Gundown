@@ -31,7 +31,6 @@ can_click = true;
 
 rightLimit = x+(sprite_get_width(spr_bar)/2)-30;
 leftLimit = x-(sprite_get_width(spr_bar)/2)+30;
-
 //create the slider for this bar and assign it some values
 a = instance_create(x,y,obj_slider);
 a.image_xscale = .75;
@@ -39,7 +38,8 @@ a.image_yscale = .75;
 a.barLength = sprite_get_width(spr_slider);
 a.rightLimit = rightLimit; 
 a.leftLimit = leftLimit;
-a.percentage = global.musicVolume*100; 
+a.percentage = 100;
+//a.percentage = global.musicVolume*100; 
 //its current x value using the above percentage value
 
 a.x = a.leftLimit + ((a.percentage/100) * (a.rightLimit-a.leftLimit));

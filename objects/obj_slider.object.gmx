@@ -32,8 +32,8 @@ grab = false;
 can_click = true;
 clicked = false;
 percentage = 100;
-left_Limit = 0;
-right_Limit = 100;
+leftLimit = 0;
+rightLimit = 100;
 
 </string>
           </argument>
@@ -96,13 +96,14 @@ if (grab == false) &amp;&amp; (clicked == false) // if this object is not being 
 else // otherwise change its coords
 {
     //if we slide with in the constraints, update the sliders coordinate
-    if ((mouse_x + xx) &gt; left_Limit) &amp;&amp; ((mouse_x + xx &lt; rightLimit))
+    if ((mouse_x + xx) &gt; leftLimit) &amp;&amp; ((mouse_x + xx &lt; rightLimit))
     {
         x = mouse_x + xx; 
     }
     else if (( mouse_x + xx) &lt; leftLimit) // set at left limit if user wants to slide ...
     {
-        x = leftLimit;
+        //x = leftLimit;
+        x = leftlimit;
     }
     else if ((mouse_x + xx) &gt; rightLimit) // set at right limit if user wants to slide...
     {
