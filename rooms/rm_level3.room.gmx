@@ -52,6 +52,7 @@
   </views>
   <instances>
     <instance objName="o_room_generator_L3" x="192" y="128" name="inst_EC9D88B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fullscreen" x="0" y="0" name="inst_78E23531" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
