@@ -103,7 +103,7 @@ else // otherwise change its coords
     else if (( mouse_x + xx) &lt; leftLimit) // set at left limit if user wants to slide ...
     {
         //x = leftLimit;
-        x = leftlimit;
+        x = leftLimit;
     }
     else if ((mouse_x + xx) &gt; rightLimit) // set at right limit if user wants to slide...
     {
