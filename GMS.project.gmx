@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\Level_theme</sound>
+    <sound>sound\quietbeggar</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_player</sprite>
