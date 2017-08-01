@@ -7,6 +7,11 @@ switch (mpos)
     }
     case 1:
     {
+    room_goto(rm_controls)
+    break; 
+    }
+    case 2: 
+    {
     if (global.level = 1)
     {
         room_goto(rm_start);
@@ -29,8 +34,8 @@ switch (mpos)
     }
     global.options = 0;
     break; 
-    }
-    case 2:
+    } 
+    case 3:
     {
     //room_goto(rm_Menu);
     game_restart(); 

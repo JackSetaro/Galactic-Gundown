@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>///Gui
 options[0] = "Sound";
-options[1] = "Main Menu";
+options[1] = "Controls"
+options[2] = "Main Menu";
 
 space = 100;
 mpos = 0; 
