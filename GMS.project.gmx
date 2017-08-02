@@ -68,6 +68,7 @@
     <object>objects\obj_powerup_speed</object>
     <object>objects\obj_healthpack</object>
     <object>objects\obj_powerup_damage</object>
+    <object>objects\o_minimap</object>
     <object>objects\obj_controller_sound</object>
     <object>objects\obj_fullscreen</object>
     <object>objects\obj_ending</object>
