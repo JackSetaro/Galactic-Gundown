@@ -38,6 +38,16 @@ down = false;
 right = false;
 left = false;
 
+with(o_enemy1)
+{
+    instance_destroy()
+}
+
+with(obj_enemy2)
+{
+    instance_destroy()
+}
+
 </string>
           </argument>
         </arguments>

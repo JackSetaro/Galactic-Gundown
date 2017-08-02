@@ -59,7 +59,7 @@ yscale = height/room_height //how much to shrink
             <kind>1</kind>
             <string>///Draw
 
-xp = view_xview[0] + 874;
+xp = view_xview[0] + 874; 
 yp = view_yview[0] + 49; 
 
 

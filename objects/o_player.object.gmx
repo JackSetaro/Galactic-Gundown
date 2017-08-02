@@ -832,7 +832,7 @@ health = health - 25
             <string>//pause
 if (global.pause == 1) exit;
 if (dead == 1) exit;
-image_angle = image_angle - 3
+image_angle = image_angle - 4
 
 </string>
           </argument>
@@ -859,7 +859,7 @@ image_angle = image_angle - 3
             <string>//pause
 if (global.pause == 1) exit;
 if (dead == 1) exit;
-image_angle = image_angle + 3
+image_angle = image_angle + 4
 </string>
           </argument>
         </arguments>
