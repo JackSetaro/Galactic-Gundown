@@ -79,8 +79,24 @@ for(k=0; k&lt;enemy2count; k=k+1)
     var wherex = xp + enemy2id.x*(xscale)
     var wherey = yp + enemy2id.y*(yscale)
     //using a circle right now to represent shooting enemies
+    draw_circle(wherex,wherey, 2, false)
+    }
+    
+//Draw Suicide Enemies
+draw_set_colour(c_silver);
+draw_set_alpha(.8);
+var enemy1count;
+enemy1count = instance_number(o_enemy1)
+
+for(k=0; k&lt;enemy1count; k=k+1)
+    {
+    enemy1id = instance_find(o_enemy1, k)
+    var wherex = xp + enemy1id.x*(xscale)
+    var wherey = yp + enemy1id.y*(yscale)
     draw_circle(wherex, wherey, 2, false)
     }
+    
+
 </string>
           </argument>
         </arguments>
