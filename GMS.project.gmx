@@ -121,18 +121,19 @@
       <object>objects\obj_vbar</object>
       <object>objects\obj_vslider</object>
     </objects>
+    <object>objects\room_fix</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_level2</room>
+    <room>rooms\rm_level3</room>
+    <room>rooms\rm_level4</room>
+    <room>rooms\rm_level5</room>
     <room>rooms\rm_controls</room>
     <room>rooms\rm_sound</room>
     <room>rooms\rm_options</room>
     <room>rooms\rm_options_game</room>
-    <room>rooms\rm_level3</room>
-    <room>rooms\rm_level4</room>
-    <room>rooms\rm_level5</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
