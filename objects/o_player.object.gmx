@@ -127,6 +127,7 @@ global.normal_dmg = global.dmg;
 draw = false;
 draw1 = false; 
 draw2 = false;
+draw3 = false;
 </string>
           </argument>
         </arguments>
@@ -154,6 +155,26 @@ global.tookdamage = 0;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
@@ -177,6 +198,7 @@ global.tookdamage = 0;
 draw = false; 
 draw1 = false;
 draw2 = false;  
+draw3 = false;
 </string>
           </argument>
         </arguments>
@@ -490,7 +512,7 @@ global.tookdamage = 1;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_tp2">
+    <event eventtype="4" ename="obj_tp">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -515,7 +537,7 @@ y = 224
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_tp">
+    <event eventtype="4" ename="obj_tp2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -727,9 +749,14 @@ with(obj_healthpack)
             <kind>1</kind>
             <string>///Draw 
 
-if (alarm[0] == -1)
+if (alarm[0] == -1 &amp;&amp; global.fullscreen == 0)
 {
     draw = true;
+    alarm[0] = room_speed * 3;     
+}
+else if (alarm[0] == -1 &amp;&amp; global.fullscreen == 1)
+{
+    draw3 = true;
     alarm[0] = room_speed * 3;     
 }
 
@@ -883,13 +910,23 @@ image_angle = image_angle + 4
           <argument>
             <kind>1</kind>
             <string>///Speedup!
-/*
+
 if (draw)
 {
     draw_set_font(fnt_large);
     draw_set_color(c_red);
     draw_text(200, 300, "Speed Up!");
 }
+
+//Speedup!
+
+if (draw3)
+{
+    draw_set_font(fnt_large);
+    draw_set_color(c_red);
+    draw_text(250, 350, "Speed Up!");
+}
+
 </string>
           </argument>
         </arguments>
@@ -952,34 +989,6 @@ if (draw2)
       </action>
     </event>
     <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Speedup!
-
-if (draw)
-{
-    draw_set_font(fnt_large);
-    draw_set_color(c_red);
-    draw_text(200, 300, "Speed Up!");
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>

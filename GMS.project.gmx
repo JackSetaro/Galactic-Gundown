@@ -71,6 +71,7 @@
     <object>objects\o_minimap</object>
     <object>objects\obj_controller_sound</object>
     <object>objects\obj_fullscreen</object>
+    <object>objects\o_boss5</object>
     <object>objects\obj_ending</object>
     <object>objects\obj_bar</object>
     <object>objects\obj_enemy2</object>
@@ -80,7 +81,6 @@
     <object>objects\o_boss2</object>
     <object>objects\o_boss3</object>
     <object>objects\o_boss4</object>
-    <object>objects\o_boss5</object>
     <object>objects\o_bossbullet</object>
     <objects name="Rooms">
       <object>objects\obj_tp4</object>
@@ -104,8 +104,8 @@
       <object>objects\o_room_generator_L5</object>
       <object>objects\o_warp_bottom</object>
       <object>objects\o_warp_top</object>
-      <object>objects\o_warp_right</object>
       <object>objects\o_warp_left</object>
+      <object>objects\o_warp_right</object>
       <object>objects\o_room</object>
       <object>objects\o_warp</object>
       <object>objects\obj_wall</object>
