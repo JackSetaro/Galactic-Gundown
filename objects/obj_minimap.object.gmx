@@ -28,11 +28,19 @@
             <string>///Variables
 global.playerpos = 0;
 // 1 = up 2 = right 3 = down 4 = left
-
+/*
 x1 = view_xview[0] + 900;
 x2 = view_xview[0] + 925;
 y1 = view_yview[0] + 80;
 y2 = view_yview[0] + 105;
+*/
+minix = view_xview[0] + 900
+miniy = view_yview[0] + 80
+
+instance_create(minix, miniy, obj_miniroomstart)
+
+currentroomx = obj_miniroomstart.x
+currentroomy = obj_miniroomstart.y
 
 drawtop = false;
 drawright = false;
@@ -40,7 +48,7 @@ drawbottom = false;
 drawleft = false;
 
 // variable +=2
-global.add=20
+global.add=0;
 </string>
           </argument>
         </arguments>
@@ -61,8 +69,9 @@ global.add=20
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw Minimap
-draw = true;
+            <string>///Notes
+/*
+creating an object and trying to subtract a y in that doesnt actuylly chnage the overall number
 </string>
           </argument>
         </arguments>
@@ -121,24 +130,29 @@ if keyboard_check_pressed(vk_tab)
           <argument>
             <kind>1</kind>
             <string>///Player Postion
+
 if global.playerpos == 1
 {
-    drawtop = true;
+    currentroomy -= 40
+    instance_create(currentroomx,currentroomy - 40,obj_miniroom)
 }
 if global.playerpos == 2
 {
-    drawright = true;
+    //currentroomx = currentroomx + 40
+    instance_create(currentroomx + 40,currentroomy,obj_miniroom)
 }
 if global.playerpos == 3
 {
-    drawbottom = true;
+    //currentroomy = currentroomy + 40
+    instance_create(currentroomx,currentroomy + 40,obj_miniroom)
 }
 if global.playerpos == 4
 {
-    drawleft = true;
+    //currentroomx = currentroomx - 40
+    instance_create(currentroomx - 40,currentroomy,obj_miniroom)
 }
 
-
+///maybe miniroom.x and .y might have to make ministart room
 </string>
           </argument>
         </arguments>
@@ -167,14 +181,14 @@ x2 = view_xview[0] + 925;
 y1 = view_yview[0] + 80;
 y2 = view_yview[0] + 105;
 
-if (draw)
-{
+//if (draw)
+//{
 depth = -5000
 draw_set_colour(c_red);
 draw_rectangle(view_xview[0] + 800, view_yview[0] + 1 , view_xview[0] + 1023, view_yview[0] + 200, true);
 //draw_rectangle_colour(global.x1, global.y1, global.x2, global.y2, c_red, c_red, c_red, c_red, false);
-draw_rectangle_colour(view_xview[0] + 900,view_yview[0] + 80 , view_xview[0] + 925, view_yview[0] + 105, c_red, c_red, c_red, c_red, false);
-}
+//draw_rectangle_colour(view_xview[0] + 900,view_yview[0] + 80 , view_xview[0] + 925, view_yview[0] + 105, c_red, c_red, c_red, c_red, false);
+//}
 </string>
           </argument>
         </arguments>
@@ -196,9 +210,10 @@ draw_rectangle_colour(view_xview[0] + 900,view_yview[0] + 80 , view_xview[0] + 9
           <argument>
             <kind>1</kind>
             <string>///Draw Top
+/*
 if (drawtop)
 {
-    draw_rectangle_colour(x1,y1 - global.add ,x2,y2 - global.add , c_red, c_red, c_red, c_red, false);
+    draw_rectangle_colour(x1, y1 - global.add, x2, y2 - global.add , c_red, c_red, c_red, c_red, false);
 }
 
 
@@ -223,9 +238,10 @@ if (drawtop)
           <argument>
             <kind>1</kind>
             <string>///Draw right
+/*
 if (drawright)
 {
-    draw_rectangle_colour(global.x1, global.y1, global.x2, global.y2, c_red, c_red, c_red, c_red, false);
+    draw_rectangle_colour(x1 + global.add, y1, x2 + global.add, y2, c_red, c_red, c_red, c_red, false);
 }
 </string>
           </argument>
@@ -248,9 +264,10 @@ if (drawright)
           <argument>
             <kind>1</kind>
             <string>///Draw bottom
+/*
 if (drawbottom)
 {
-    draw_rectangle_colour(global.x1,global.y1,global.x2, global.y2, c_red, c_red, c_red, c_red, false);
+    draw_rectangle_colour(x1, y1 + global.add, x2, y2 + global.add, c_red, c_red, c_red, c_red, false);
 }
 </string>
           </argument>
@@ -273,9 +290,10 @@ if (drawbottom)
           <argument>
             <kind>1</kind>
             <string>///Draw left
+/*
 if (drawleft)
 {
-    draw_rectangle_colour(global.x1, global.y1,global.x2, global.y2, c_red, c_red, c_red, c_red, false);
+    draw_rectangle_colour(x1 - global.add, y1, x2 - global.add, y2, c_red, c_red, c_red, c_red, false);
 }
 </string>
           </argument>
