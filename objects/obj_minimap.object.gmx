@@ -29,10 +29,10 @@
 global.playerpos = 0;
 // 1 = up 2 = right 3 = down 4 = left
 
-x1 = view_xview[0]// + 900;
-x2 = view_xview[0]// + 925;
-y1 = view_yview[0]// + 80;
-y2 = view_yview[0]// + 105;
+x1 = view_xview[0] + 900;
+x2 = view_xview[0] + 925;
+y1 = view_yview[0] + 80;
+y2 = view_yview[0] + 105;
 
 drawtop = false;
 drawright = false;
@@ -40,7 +40,7 @@ drawbottom = false;
 drawleft = false;
 
 // variable +=2
-
+global.add=20
 </string>
           </argument>
         </arguments>
@@ -124,54 +124,20 @@ if keyboard_check_pressed(vk_tab)
 if global.playerpos == 1
 {
     drawtop = true;
-    draw_rectangle_colour(x1,y1 - 20,x2,y2 - 20, c_red, c_red, c_red, c_red, false);
-    //y1 -= 20
-    //y2 -= 20
 }
 if global.playerpos == 2
 {
     drawright = true;
-    //x1 += 20
-    //x2 += 20
 }
 if global.playerpos == 3
 {
     drawbottom = true;
-    //y1 += 20
-    //y2 += 20
 }
 if global.playerpos == 4
 {
     drawleft = true;
-    //x1 -= 20
-    //x2 -= 20
 }
 
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>x1 = view_xview[0] + 900;
-x2 = view_xview[0] + 925;
-y1 = view_yview[0] + 80;
-y2 = view_yview[0] + 105;
 
 </string>
           </argument>
@@ -196,18 +162,18 @@ y2 = view_yview[0] + 105;
           <argument>
             <kind>1</kind>
             <string>///Draw minimap to top right
-//x1 = view_xview[0] + 900;
-//x2 = view_xview[0] + 925;
-//y1 = view_yview[0] + 80;
-//y2 = view_yview[0] + 105;
+x1 = view_xview[0] + 900;
+x2 = view_xview[0] + 925;
+y1 = view_yview[0] + 80;
+y2 = view_yview[0] + 105;
 
 if (draw)
 {
 depth = -5000
 draw_set_colour(c_red);
 draw_rectangle(view_xview[0] + 800, view_yview[0] + 1 , view_xview[0] + 1023, view_yview[0] + 200, true);
-draw_rectangle_colour(x1, y1, x2, y2, c_red, c_red, c_red, c_red, false);
-//draw_rectangle_colour(view_xview[0] + 900,view_yview[0] + 80 , view_xview[0] + 925, view_yview[0] + 105, c_red, c_red, c_red, c_red, false);
+//draw_rectangle_colour(global.x1, global.y1, global.x2, global.y2, c_red, c_red, c_red, c_red, false);
+draw_rectangle_colour(view_xview[0] + 900,view_yview[0] + 80 , view_xview[0] + 925, view_yview[0] + 105, c_red, c_red, c_red, c_red, false);
 }
 </string>
           </argument>
@@ -232,7 +198,7 @@ draw_rectangle_colour(x1, y1, x2, y2, c_red, c_red, c_red, c_red, false);
             <string>///Draw Top
 if (drawtop)
 {
-    //draw_rectangle_colour(x1,y1 - 20,x2,y2 - 20, c_red, c_red, c_red, c_red, false);
+    draw_rectangle_colour(x1,y1 - global.add ,x2,y2 - global.add , c_red, c_red, c_red, c_red, false);
 }
 
 
@@ -259,7 +225,7 @@ if (drawtop)
             <string>///Draw right
 if (drawright)
 {
-    draw_rectangle_colour(x1 + 20, y1, x2 + 20, y2, c_red, c_red, c_red, c_red, false);
+    draw_rectangle_colour(global.x1, global.y1, global.x2, global.y2, c_red, c_red, c_red, c_red, false);
 }
 </string>
           </argument>
@@ -284,7 +250,7 @@ if (drawright)
             <string>///Draw bottom
 if (drawbottom)
 {
-    draw_rectangle_colour(x1,y1 + 20,x2, y2 + 20, c_red, c_red, c_red, c_red, false);
+    draw_rectangle_colour(global.x1,global.y1,global.x2, global.y2, c_red, c_red, c_red, c_red, false);
 }
 </string>
           </argument>
@@ -309,7 +275,7 @@ if (drawbottom)
             <string>///Draw left
 if (drawleft)
 {
-    draw_rectangle_colour(x1 - 20, y1,x2 - 20, y2, c_red, c_red, c_red, c_red, false);
+    draw_rectangle_colour(global.x1, global.y1,global.x2, global.y2, c_red, c_red, c_red, c_red, false);
 }
 </string>
           </argument>

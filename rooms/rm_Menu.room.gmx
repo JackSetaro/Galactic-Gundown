@@ -11,7 +11,11 @@
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>global.musicVolume = 100;
-global.ingame = 0;</code>
+global.ingame = 0;
+global.x1 = view_xview[0] + 900;
+global.x2 = view_xview[0] + 925;
+global.y1 = view_yview[0] + 80;
+global.y2 = view_yview[0] + 105;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
