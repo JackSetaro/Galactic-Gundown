@@ -41,6 +41,7 @@ draw_text(view_xview[0] + 100,view_yview[0] + 400,"Turn Left");
 draw_text(view_xview[0] + 100,view_yview[0] + 450,"Turn Right");
 draw_text(view_xview[0] + 100,view_yview[0] + 500,"Shoot"); 
 draw_text(view_xview[0] + 100,view_yview[0] + 550,"Full Screen");   
+draw_text(view_xview[0] + 100,view_yview[0] + 600,"Mini Map");   
 
 //Right Side
 draw_text(view_xview[0] + 570,view_yview[0] + 200,"W");   
@@ -50,7 +51,9 @@ draw_text(view_xview[0] + 570,view_yview[0] + 350,"D");
 draw_text(view_xview[0] + 570,view_yview[0] + 400,"Left   Arrow Key"); 
 draw_text(view_xview[0] + 570,view_yview[0] + 450,"Right Arrow Key"); 
 draw_text(view_xview[0] + 570,view_yview[0] + 500,"Space Bar");
-draw_text(view_xview[0] + 570,view_yview[0] + 550,"F");        
+draw_text(view_xview[0] + 570,view_yview[0] + 550,"F");   
+draw_text(view_xview[0] + 570,view_yview[0] + 600,"Tab");     
+ 
 </string>
           </argument>
         </arguments>
