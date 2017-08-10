@@ -58,6 +58,7 @@ if (image_index == 0 &amp;&amp; place_meeting(x,y,o_player))
     {
         x += 200;
     }
+    global.add = global.add + 20
     global.playerpos = 2;
 }
 </string>
