@@ -50,6 +50,7 @@
   <scripts name="scripts">
     <script>scripts\scr_options.gml</script>
     <script>scripts\scr_options_game.gml</script>
+    <script>scripts\scr_loadgame.gml</script>
     <script>scripts\scr_control.gml</script>
     <script>scripts\scr_sound.gml</script>
     <script>scripts\scr_menu.gml</script>

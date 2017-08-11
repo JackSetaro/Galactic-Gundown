@@ -16,7 +16,11 @@ switch (mpos)
    {
    game_end(); break;
    }
-   
+   case 3:
+   {
+   scr_loadgame();
+   break;
+   }
    default: break;
 }
 

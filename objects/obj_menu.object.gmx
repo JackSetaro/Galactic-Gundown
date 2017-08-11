@@ -29,6 +29,7 @@
 menu[0] = "Start";
 menu[1] = "Options";
 menu[2] = "Quit";
+menu[3] = "Load Previous"; 
 //vertical spacing
 space = 100;
 mpos = 0;
