@@ -65,7 +65,7 @@ image_index = 0;
     {
         y += 768;
     }
-    global.add = global.add + 40
+    //global.add = global.add + 40
     global.playerpos = 3;
 }
 </string>

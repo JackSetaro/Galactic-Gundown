@@ -32,6 +32,24 @@ if (!audio_is_playing(Level_theme))
     audio_play_sound(Level_theme, 100, true);
     audio_sound_gain(Level_theme, global.musicVolume, 0);
 }
+
+/*if (!audio_is_playing(quietbeggar))
+{
+    audio_play_sound(quietbeggar, 100, true);
+    audio_sound_gain(quietbeggar, global.musicVolume, 0);
+}
+
+if (!audio_is_playing(You_Win))
+{
+    audio_play_sound(You_Win, 100, true);
+    audio_sound_gain(You_Win, global.musicVolume, 0);
+}
+
+if (!audio_is_playing(sans_fight))
+{
+    audio_play_sound(sans_fight, 100, true);
+    audio_sound_gain(sans_fight, global.musicVolume, 0);
+}
 </string>
           </argument>
         </arguments>
@@ -52,7 +70,8 @@ if (!audio_is_playing(Level_theme))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.musicVolume = 1;
+            <string>///Variables
+global.musicVolume = 1;
 </string>
           </argument>
         </arguments>
@@ -75,7 +94,11 @@ if (!audio_is_playing(Level_theme))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_sound_gain(Level_theme, global.musicVolume, 0); 
+            <string>///Change Gain
+audio_sound_gain(Level_theme, global.musicVolume, 0); 
+audio_sound_gain(quietbeggar, global.musicVolume, 0);
+audio_sound_gain(You_Win, global.musicVolume, 0);
+audio_sound_gain(sans_fight, global.musicVolume, 0);
 </string>
           </argument>
         </arguments>
@@ -98,7 +121,8 @@ if (!audio_is_playing(Level_theme))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fnt_small);
+            <string>///Draw Percent
+draw_set_font(fnt_small);
 draw_set_halign(fa_left);
 draw_set_colour(c_lime);
 draw_text(x, y, "Music Percentage: " + string(obj_slider.percentage));

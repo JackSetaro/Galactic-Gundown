@@ -3,6 +3,7 @@ switch (mpos)
     case 0:
     {
     room_goto(rm_sound);
+    global.sound = 1;
     break;
     }
     case 1:
@@ -33,6 +34,7 @@ switch (mpos)
         room_goto(rm_level5);
     }
     global.options = 0;
+    audio_resume_sound(Level_theme)
     break; 
     } 
     case 3:

@@ -133,23 +133,23 @@ if keyboard_check_pressed(vk_tab)
 
 if global.playerpos == 1
 {
-    currentroomy -= 40
-    instance_create(currentroomx,currentroomy - 40,obj_miniroom)
+    //currentroomy = currentroomy - 40
+    instance_create(currentroomx,currentroomy - global.add,obj_miniroom)
 }
 if global.playerpos == 2
 {
     //currentroomx = currentroomx + 40
-    instance_create(currentroomx + 40,currentroomy,obj_miniroom)
+    instance_create(currentroomx + global.add,currentroomy,obj_miniroom)
 }
 if global.playerpos == 3
 {
     //currentroomy = currentroomy + 40
-    instance_create(currentroomx,currentroomy + 40,obj_miniroom)
+    instance_create(currentroomx,currentroomy + global.add,obj_miniroom)
 }
 if global.playerpos == 4
 {
     //currentroomx = currentroomx - 40
-    instance_create(currentroomx - 40,currentroomy,obj_miniroom)
+    instance_create(currentroomx - global.add,currentroomy,obj_miniroom)
 }
 
 ///maybe miniroom.x and .y might have to make ministart room

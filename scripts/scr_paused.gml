@@ -9,6 +9,7 @@ switch (mpos)
     {
     room_goto(rm_options_game);
     global.options = 1;
+    audio_pause_sound(Level_theme)
     break;
     }
     case 2:
