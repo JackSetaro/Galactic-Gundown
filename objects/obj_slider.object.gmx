@@ -80,7 +80,7 @@ image_yscale = 0.50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Mosue Locking
+            <string>///Mouse Locking
 
 //if the mouse button is not clicked
 
@@ -171,6 +171,13 @@ if (can_click)
         
         //get relative click position
         xx = x - mouse_x;
+        
+        //saving
+        if (file_exists("SaveSound.sav")) file_delete("SaveSound.sav"); 
+            var SaveFile = file_text_open_write("SaveSound.sav");
+            var SaveSound = xx; 
+            file_text_write_real(SaveFile, SaveSound); 
+            file_text_close(SaveFile);
 }
 </string>
           </argument>
@@ -194,7 +201,8 @@ if (can_click)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw sprite
+            <string>///Draw
+//draw sprite
 draw_sprite_ext(spr_slider, 0, x, y, 1, 1, 0, c_white, 1); 
 
 //and values

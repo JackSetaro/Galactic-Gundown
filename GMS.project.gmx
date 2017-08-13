@@ -52,6 +52,7 @@
     <script>scripts\scr_options_game.gml</script>
     <script>scripts\scr_loadgame.gml</script>
     <script>scripts\scr_control.gml</script>
+    <script>scripts\scr_loadgame2.gml</script>
     <script>scripts\scr_sound.gml</script>
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_paused.gml</script>
@@ -71,8 +72,8 @@
     <object>objects\obj_powerup_damage</object>
     <object>objects\obj_minimap</object>
     <object>objects\obj_controller_sound</object>
-    <object>objects\obj_fullscreen</object>
     <object>objects\o_boss5</object>
+    <object>objects\obj_fullscreen</object>
     <object>objects\obj_ending</object>
     <object>objects\obj_bar</object>
     <object>objects\obj_enemy2</object>

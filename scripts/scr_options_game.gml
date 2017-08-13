@@ -3,7 +3,8 @@ switch (mpos)
     case 0:
     {
     room_goto(rm_sound);
-    global.sound = 1;
+    scr_loadgame2(); 
+    //global.sound = 1;
     break;
     }
     case 1:

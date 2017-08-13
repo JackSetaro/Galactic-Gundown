@@ -38,8 +38,8 @@ a.image_yscale = .75;
 a.barLength = sprite_get_width(spr_slider);
 a.rightLimit = rightLimit; 
 a.leftLimit = leftLimit;
-a.percentage = 100;
-//a.percentage = global.musicVolume*100; 
+//a.percentage = 100;
+a.percentage = global.musicVolume*100; 
 //its current x value using the above percentage value
 
 a.x = a.leftLimit + ((a.percentage/100) * (a.rightLimit-a.leftLimit));
@@ -67,11 +67,12 @@ a.clicked = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (can_click) 
+            <string>///Ye
+if (can_click) 
 {
         // this enables us to click the bar to advance the slider
         if (mouse_x &gt; leftLimit) &amp;&amp; (mouse_x &lt; rightLimit)
-        {
+        { 
             a.x = mouse_x
             a.clicked = true;
         }

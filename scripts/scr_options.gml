@@ -4,7 +4,7 @@ switch (mpos)
     {
     room_goto(rm_sound);
     audio_play_sound(Level_theme,10, true)
-    global.sound = 1;
+    //global.sound = 1;
     break;
     }
     case 1: 
