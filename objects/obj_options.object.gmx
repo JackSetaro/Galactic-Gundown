@@ -91,7 +91,8 @@ if (push == 1) scr_options();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check(vk_escape))
+            <string>//Go to Menu
+if (keyboard_check(vk_escape))
 {
     room_goto(rm_Menu)
 }

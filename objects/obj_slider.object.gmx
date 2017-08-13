@@ -141,6 +141,11 @@ clicked = false;
             <string>///Object not being grabbed
 
 grab = false;
+if (file_exists("SaveSound.sav")) file_delete("SaveSound.sav"); 
+var SaveFile = file_text_open_write("SaveSound.sav");
+var SaveSound = percentage; 
+file_text_write_real(SaveFile, SaveSound); 
+file_text_close(SaveFile);
 </string>
           </argument>
         </arguments>
