@@ -63,34 +63,28 @@
     <font>fonts\fnt_options</font>
   </fonts>
   <objects name="objects">
-    <object>objects\o_player</object>
-    <object>objects\o_bullet</object>
-    <object>objects\o_enemy1</object>
-    <object>objects\obj_enemybullet</object>
-    <object>objects\obj_powerup_speed</object>
-    <object>objects\obj_healthpack</object>
-    <object>objects\obj_powerup_damage</object>
-    <object>objects\obj_minimap</object>
-    <object>objects\obj_controller_sound</object>
-    <object>objects\o_boss5</object>
-    <object>objects\obj_fullscreen</object>
-    <object>objects\obj_ending</object>
-    <object>objects\obj_bar</object>
-    <object>objects\obj_enemy2</object>
-    <object>objects\par_enemy</object>
-    <object>objects\obj_slider</object>
-    <object>objects\o_boss1</object>
-    <object>objects\o_boss2</object>
-    <object>objects\obj_miniroomstart</object>
-    <object>objects\obj_miniroom</object>
-    <object>objects\o_boss3</object>
-    <object>objects\o_boss4</object>
-    <object>objects\o_bossbullet</object>
+    <objects name="Player">
+      <object>objects\obj_healthpack</object>
+      <object>objects\obj_powerup_speed</object>
+      <object>objects\obj_powerup_damage</object>
+      <object>objects\o_bullet</object>
+      <object>objects\o_player</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\obj_enemy2</object>
+      <object>objects\par_enemy</object>
+      <object>objects\obj_enemybullet</object>
+      <object>objects\o_enemy1</object>
+    </objects>
+    <objects name="Bosses">
+      <object>objects\o_boss5</object>
+      <object>objects\o_boss4</object>
+      <object>objects\o_boss3</object>
+      <object>objects\o_boss1</object>
+      <object>objects\o_boss2</object>
+      <object>objects\o_bossbullet</object>
+    </objects>
     <objects name="Rooms">
-      <object>objects\obj_tp4</object>
-      <object>objects\obj_tp3</object>
-      <object>objects\obj_tp2</object>
-      <object>objects\obj_tp</object>
       <object>objects\par_doors</object>
       <object>objects\obj_powerup_room</object>
       <object>objects\room_fix</object>
@@ -106,13 +100,21 @@
       <object>objects\o_room_generator_L3</object>
       <object>objects\o_room_generator_L4</object>
       <object>objects\o_room_generator_L5</object>
-      <object>objects\o_warp_bottom</object>
-      <object>objects\o_warp_top</object>
-      <object>objects\o_warp_left</object>
-      <object>objects\o_warp_right</object>
-      <object>objects\o_room</object>
-      <object>objects\o_warp</object>
-      <object>objects\obj_wall</object>
+      <objects name="Tps">
+        <object>objects\obj_tp4</object>
+        <object>objects\obj_tp3</object>
+        <object>objects\obj_tp2</object>
+        <object>objects\obj_tp</object>
+      </objects>
+      <objects name="Warps">
+        <object>objects\o_warp_bottom</object>
+        <object>objects\o_warp_top</object>
+        <object>objects\o_warp_left</object>
+        <object>objects\o_warp_right</object>
+        <object>objects\obj_wall</object>
+        <object>objects\o_warp</object>
+        <object>objects\o_room</object>
+      </objects>
     </objects>
     <objects name="Gui">
       <object>objects\o_pause</object>
@@ -124,7 +126,15 @@
       <object>objects\obj_options_game</object>
       <object>objects\obj_menu</object>
       <object>objects\obj_vbar</object>
+      <object>objects\obj_slider</object>
+      <object>objects\obj_bar</object>
       <object>objects\obj_vslider</object>
+    </objects>
+    <objects name="Controllers">
+      <object>objects\obj_MapBOI</object>
+      <object>objects\obj_fullscreen</object>
+      <object>objects\obj_ending</object>
+      <object>objects\obj_controller_sound</object>
     </objects>
   </objects>
   <rooms name="rooms">
