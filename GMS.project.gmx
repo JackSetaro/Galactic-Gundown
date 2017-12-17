@@ -131,7 +131,6 @@
       <object>objects\obj_vslider</object>
     </objects>
     <objects name="Controllers">
-      <object>objects\obj_MapBOI</object>
       <object>objects\obj_fullscreen</object>
       <object>objects\obj_ending</object>
       <object>objects\obj_controller_sound</object>

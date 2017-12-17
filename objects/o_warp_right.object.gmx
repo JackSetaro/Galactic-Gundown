@@ -58,14 +58,6 @@ if (image_index == 0 &amp;&amp; place_meeting(x,y,o_player))
     {
         x += 200;
     }
-    with (obj_miniroom)
-    {
-        x += 1024;
-    }
-     with (obj_miniroomstart)
-    {
-        x += 1024;
-    }
     //global.add = global.add + 40
     global.playerpos = 2;
 }
