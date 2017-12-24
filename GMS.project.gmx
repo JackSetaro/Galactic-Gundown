@@ -38,6 +38,7 @@
     <sprite>sprites\s_trump</sprite>
     <sprite>sprites\spr_enemy3</sprite>
     <sprite>sprites\sprite26</sprite>
+    <sprite>sprites\spr_enemy4</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -74,6 +75,7 @@
     </objects>
     <objects name="Enemies">
       <object>objects\obj_enemy2</object>
+      <object>objects\obj_enemy4</object>
       <object>objects\obj_enemy3</object>
       <object>objects\par_enemy</object>
       <object>objects\obj_enemybullet</object>
