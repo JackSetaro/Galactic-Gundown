@@ -198,35 +198,58 @@ if(e4health &lt; 1) instance_destroy();
 if (global.pause) exit;
 if (global.dead) exit;
 
-var dir1 = point_direction(x, y, x + 200, y);
-var dir2 = point_direction(x, y, x - 200, y);
-var dir3 = point_direction(x, y + 200, x, y);
-var dir4 = point_direction(x, y - 200, x, y);
-var bulletSpeed = 10;
+var dir1 = x + 50
+var dir2 = y + 50
+var dir3 = x - 50
+var dir4 = y - 50
+
+var bulletSpeed = 15;
 
 if (canShoot) 
 {
-    var bid = instance_create(x, y, obj_enemybullet);
-    var bid2 = instance_create(x, y, obj_enemybullet); 
-    var bid3 = instance_create(x, y, obj_enemybullet); 
-    var bid4 = instance_create(x, y, obj_enemybullet);  
-   
+    //Bullet 1
+    var bid = instance_create(x, y, obj_enemybullet); 
     bid.direction = dir1;
+    bid.speed = bulletSpeed;
     bid.image_angle = dir1; 
-   
-    bid2.direction = dir2;
-    bid2.image_angle = dir2; 
-   
-    bid3.direction = dir3;
-    bid3.image_angle = dir3; 
-    
-    bid4.direction = dir4;
-    bid4.image_angle = dir4; 
-    
     
     canShoot = false;
     alarm[0] = 40; 
 }
+if (canShoot) 
+{
+    //Bullet 2
+    var bid = instance_create(x, y, obj_enemybullet); 
+    bid.direction = dir2;
+    bid.speed = bulletSpeed;
+    bid.image_angle = dir2; 
+    
+    canShoot = false;
+    alarm[0] = 40; 
+}
+if (canShoot) 
+{
+    //Bullet 3
+    var bid = instance_create(x, y, obj_enemybullet); 
+    bid.direction = dir3;
+    bid.speed = bulletSpeed;
+    bid.image_angle = dir3; 
+    
+    canShoot = false;
+    alarm[0] = 40; 
+}
+if (canShoot) 
+{
+    //Bullet 4
+    var bid = instance_create(x, y, obj_enemybullet); 
+    bid.direction = dir4;
+    bid.speed = bulletSpeed;
+    bid.image_angle = dir4; 
+    
+    canShoot = false;
+    alarm[0] = 40; 
+}
+
 </string>
           </argument>
         </arguments>
@@ -250,7 +273,7 @@ if (canShoot)
             <string>///Follow Player
 if (global.pause) exit;
 if (global.dead == 1) exit;
-mp_potential_step(o_player.x, o_player.y,3, true);
+mp_potential_step(o_player.x, o_player.y,1, true);
 </string>
           </argument>
         </arguments>
