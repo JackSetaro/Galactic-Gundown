@@ -79,6 +79,10 @@
       <object>objects\obj_enemy3</object>
       <object>objects\par_enemy</object>
       <object>objects\obj_enemybullet</object>
+      <object>objects\obj_bulletNorth</object>
+      <object>objects\obj_bulletSouth</object>
+      <object>objects\obj_bulletEast</object>
+      <object>objects\obj_bulletWest</object>
       <object>objects\obj_enemy3bullet</object>
       <object>objects\o_enemy1</object>
     </objects>
