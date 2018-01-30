@@ -50,7 +50,7 @@ canShoot = true;
             <kind>1</kind>
             <string>///Health
 
-e4health = 100; 
+e4health = 250; 
 </string>
           </argument>
         </arguments>
@@ -101,7 +101,8 @@ canShoot = true;
             <string>///Follow Player
 if (global.pause) exit;
 if (global.dead == 1) exit;
-mp_potential_step(o_player.x, o_player.y,1, true);
+//mp_potential_step(o_player.x, o_player.y,1, true);
+if irandom(30) = 1 motion_set(random(360), 1 + random(3));
 </string>
           </argument>
         </arguments>
@@ -231,7 +232,7 @@ if (canShoot)
     instance_create(x, y, obj_bulletWest);
     
     canShoot = false;
-    alarm[0] = 40; 
+    alarm[0] = 30; 
 }
 
 </string>

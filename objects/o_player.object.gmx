@@ -761,7 +761,7 @@ health = health - 20;
           <argument>
             <kind>1</kind>
             <string>///Health From Enemys
-health = health - 5;
+health = health - 10;
 </string>
           </argument>
         </arguments>
@@ -785,7 +785,7 @@ health = health - 5;
           <argument>
             <kind>1</kind>
             <string>///Health From Enemys
-health = health - 5;
+health = health - 10;
 </string>
           </argument>
         </arguments>
@@ -809,7 +809,7 @@ health = health - 5;
           <argument>
             <kind>1</kind>
             <string>///Health From Enemys
-health = health - 5;
+health = health - 10;
 </string>
           </argument>
         </arguments>
@@ -833,7 +833,7 @@ health = health - 5;
           <argument>
             <kind>1</kind>
             <string>///Health From Enemys
-health = health - 5;
+health = health - 10;
 </string>
           </argument>
         </arguments>
