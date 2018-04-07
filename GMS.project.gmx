@@ -40,6 +40,7 @@
     <sprite>sprites\sprite26</sprite>
     <sprite>sprites\spr_enemy4</sprite>
     <sprite>sprites\spr_enemy5</sprite>
+    <sprite>sprites\sprite29</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
