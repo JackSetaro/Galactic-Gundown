@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\Level_theme</sound>
+    <sound>sound\Pewpew</sound>
     <sound>sound\quietbeggar</sound>
     <sound>sound\You_Win</sound>
     <sound>sound\sans_fight</sound>
