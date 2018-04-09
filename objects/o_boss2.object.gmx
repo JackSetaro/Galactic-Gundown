@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -52,6 +52,7 @@ canShoot = true;
 image_xscale = 0.75;
 image_yscale = 0.75;
 
+
 boss2_hp = 100;
 
 firing = false;
@@ -59,6 +60,7 @@ firing = false;
 global.firedir = 0;
 
 spawnenemy = false;
+
 </string>
           </argument>
         </arguments>
@@ -261,7 +263,11 @@ boss2_hp = boss2_hp - global.dmg;
           <argument>
             <kind>1</kind>
             <string>///Boss Healthbar
-draw_healthbar(x - 100,y + 175, x + 100, y + 181, boss2_hp , c_red, c_orange, c_green, 0, true, true);
+
+max_hp = 100;
+var pc;
+pc = (boss2_hp / max_hp) * 100;
+draw_healthbar(x - 100,y + 175, x + 100, y + 181, pc , c_red, c_orange, c_green, 0, true, true);
 </string>
           </argument>
         </arguments>
