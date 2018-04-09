@@ -111,7 +111,7 @@ canShoot = true;
             <string>///Stage 1
 
 
-if(boss2_hp&gt;50)
+if(boss2_hp&gt;50.99)
 {
 if (global.pause) exit;
 if (global.dead) exit;
@@ -212,8 +212,51 @@ firing = false;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Also Stage 2
+///Stage 1
+
+
+if(boss2_hp &lt; 51)
+{
+if (global.pause) exit;
+if (global.dead) exit;
+
+var dir = point_direction(x, y, o_player.x, o_player.y);
+var bulletSpeed = 10;
+
+if (canShoot) 
+{
+    var bid = instance_create(x, y, obj_enemybullet); 
+    bid.direction = dir;
+    bid.speed = bulletSpeed;
+    bid.image_angle = dir; 
+    
+    canShoot = false;
+    alarm[0] = 40; 
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Death
-if(boss2_hp &lt; 1) instance_destroy(self); 
+if(boss2_hp &lt; .01) instance_destroy(self); 
 
 
 </string>
@@ -289,12 +332,12 @@ draw_healthbar(x - 125,y + 50, x + 20, y + 56, pc , c_red, c_orange, c_green, 0,
           <argument>
             <kind>1</kind>
             <string>///Draw Boss
-if(boss2_hp&gt;50)
+if(boss2_hp &gt;= 51)
 {
 draw_sprite(s_pewpew, -1, o_boss2.x, o_boss2.y)
 }
 
-if(boss2_hp&lt;51)
+if(boss2_hp &lt;= 50.99)
 {
 draw_sprite(s_player, -1, o_boss2.x, o_boss2.y)
 }
