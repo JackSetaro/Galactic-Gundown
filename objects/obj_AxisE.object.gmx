@@ -78,7 +78,7 @@ e5health = 400;
 
 if (spawn = 1) 
     {
-    x = room_width/1.14285714286;
+    x = room_width/(1024/896);
     y = room_width/2;
     }
     

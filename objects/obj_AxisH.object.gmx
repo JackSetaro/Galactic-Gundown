@@ -78,8 +78,8 @@ e5health = 400;
 
 if (spawn = 1) 
     {
-    obj_AxisH.x = 96;
-    obj_AxisH.y = 640;
+    x = room_width  / (1024/96);
+    y = room_height /  1.2;
     }
 
 </string>
@@ -133,27 +133,36 @@ canShoot = true;
 if (global.pause) exit;
 if (global.dead == 1) exit;
 
+//Left Side
+A1 = room_width  / (1024/96);
+
+//Vertical Location
+A2 = room_height / 1.2;
+
+//Right Side
+A3 = room_width / (1024/896);
+
 if !Switch
 {
-if x &lt;=96
+if x &lt;= A1
 {
 Switch = true;
 }
 else
 {
-mp_potential_step(96, 640 ,3, true);
+mp_potential_step(A1, A2 ,3, true);
 }
 }
 
 if Switch
 {
-if x!= 896
+if x!= A3
 {
-mp_potential_step(896, 640 ,3, true);
+mp_potential_step(A3, A2 ,3, true);
 }
 else
 {
-if(x == 896)
+if(x == A3)
 {
 Switch = false;
 }
