@@ -77,10 +77,13 @@ e5health = 400;
 
 if (spawn = 1) 
     {
-    obj_enemy5.x = 896;
-    obj_enemy5.y = 384;
+    x = room_width/1.10714285714;
+    y = room_height/2;
     }
 
+
+    
+ 
 </string>
           </argument>
         </arguments>
