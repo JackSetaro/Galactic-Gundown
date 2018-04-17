@@ -78,8 +78,8 @@ e5health = 400;
 
 if (spawn = 1) 
     {
-    obj_AxisE.x = 896;
-    obj_AxisE.y = 96;
+    obj_AxisH.x = 96;
+    obj_AxisH.y = 640;
     }
 
 </string>
@@ -135,25 +135,25 @@ if (global.dead == 1) exit;
 
 if !Switch
 {
-if y &lt;=96
+if x &lt;=96
 {
 Switch = true;
 }
 else
 {
-mp_potential_step(896, 96 ,3, true);
+mp_potential_step(96, 640 ,3, true);
 }
 }
 
 if Switch
 {
-if y!= 640
+if x!= 896
 {
 mp_potential_step(896, 640 ,3, true);
 }
 else
 {
-if(y == 640)
+if(x == 896)
 {
 Switch = false;
 }

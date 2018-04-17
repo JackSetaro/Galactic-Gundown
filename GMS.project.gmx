@@ -83,6 +83,7 @@
       <object>objects\par_enemy</object>
       <object>objects\obj_enemy5</object>
       <object>objects\obj_AxisE</object>
+      <object>objects\obj_AxisH</object>
       <object>objects\obj_enemybullet</object>
       <object>objects\obj_bulletNorth</object>
       <object>objects\obj_bulletSouth</object>

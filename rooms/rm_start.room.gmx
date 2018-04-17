@@ -61,7 +61,7 @@ global.isboss = 0;</code>
     <instance objName="o_room_generator" x="64" y="0" name="inst_1257D376" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="room_fix" x="32" y="0" name="inst_04204FBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_player" x="128" y="640" name="inst_01D41EE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-60"/>
-    <instance objName="obj_AxisE" x="960" y="640" name="inst_D1C507EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_AxisH" x="320" y="256" name="inst_AE36F32E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
