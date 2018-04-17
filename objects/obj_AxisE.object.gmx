@@ -78,9 +78,11 @@ e5health = 400;
 
 if (spawn = 1) 
     {
-    obj_AxisE.x = 896;
-    obj_AxisE.y = 96;
+    x = room_width/1.14285714286;
+    y = room_width/2;
     }
+    
+    
 
 </string>
           </argument>
@@ -129,31 +131,41 @@ canShoot = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Follow Player
+            <string>///Movement
 if (global.pause) exit;
 if (global.dead == 1) exit;
 
+//Top
+var lol = room_height / 6;
+
+//Horizontal Position
+var xd = room_width/(1024/896);
+
+//Bottom
+var ha = room_height/1.2;
+
+
 if !Switch
 {
-if y &lt;=96
+if y &lt;= lol
 {
 Switch = true;
 }
 else
 {
-mp_potential_step(896, 96 ,3, true);
+mp_potential_step(xd, lol ,3, true);
 }
 }
 
 if Switch
 {
-if y!= 640
+if y!= ha
 {
-mp_potential_step(896, 640 ,3, true);
+mp_potential_step(xd, ha ,3, true);
 }
 else
 {
-if(y == 640)
+if(y == ha)
 {
 Switch = false;
 }
