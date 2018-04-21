@@ -12,36 +12,45 @@
     <sound>sound\sans_fight</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\s_player</sprite>
-    <sprite>sprites\s_bullet</sprite>
-    <sprite>sprites\s_arrow</sprite>
-    <sprite>sprites\s_enemy1</sprite>
-    <sprite>sprites\s_warp</sprite>
-    <sprite>sprites\sprite4</sprite>
-    <sprite>sprites\s_astriod</sprite>
-    <sprite>sprites\s_laser</sprite>
-    <sprite>sprites\s_room</sprite>
-    <sprite>sprites\s_warp_sides</sprite>
-    <sprite>sprites\s_warp_top</sprite>
-    <sprite>sprites\spr_enemy2</sprite>
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\s_boss1</sprite>
-    <sprite>sprites\s_bossbullet</sprite>
-    <sprite>sprites\spr_powerup_speed</sprite>
-    <sprite>sprites\spr_tp</sprite>
-    <sprite>sprites\spr_powerup_damage</sprite>
-    <sprite>sprites\spr_slider</sprite>
-    <sprite>sprites\spr_bar</sprite>
-    <sprite>sprites\spr_healthpack</sprite>
-    <sprite>sprites\s_pewpew</sprite>
-    <sprite>sprites\s_park</sprite>
-    <sprite>sprites\s_lazybones</sprite>
-    <sprite>sprites\s_trump</sprite>
-    <sprite>sprites\spr_enemy3</sprite>
-    <sprite>sprites\sprite26</sprite>
-    <sprite>sprites\spr_enemy4</sprite>
-    <sprite>sprites\spr_enemy5</sprite>
-    <sprite>sprites\sprite29</sprite>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_enemy5</sprite>
+      <sprite>sprites\s_enemy1</sprite>
+      <sprite>sprites\spr_enemy2</sprite>
+      <sprite>sprites\spr_enemy3</sprite>
+      <sprite>sprites\spr_enemy4</sprite>
+      <sprite>sprites\sprite4</sprite>
+    </sprites>
+    <sprites name="Bosses">
+      <sprite>sprites\s_pewpew</sprite>
+      <sprite>sprites\s_lazybones</sprite>
+      <sprite>sprites\s_trump</sprite>
+      <sprite>sprites\s_park</sprite>
+      <sprite>sprites\s_boss1</sprite>
+    </sprites>
+    <sprites name="Powerups">
+      <sprite>sprites\spr_healthpack</sprite>
+      <sprite>sprites\spr_powerup_damage</sprite>
+      <sprite>sprites\spr_laser</sprite>
+      <sprite>sprites\spr_powerup_speed</sprite>
+    </sprites>
+    <sprites name="Everthing Else">
+      <sprite>sprites\s_player</sprite>
+      <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\s_bossbullet</sprite>
+      <sprite>sprites\spr_slider</sprite>
+      <sprite>sprites\spr_bar</sprite>
+      <sprite>sprites\spr_tp</sprite>
+      <sprite>sprites\sprite29</sprite>
+      <sprite>sprites\sprite26</sprite>
+      <sprite>sprites\s_warp_sides</sprite>
+      <sprite>sprites\s_room</sprite>
+      <sprite>sprites\s_warp_top</sprite>
+      <sprite>sprites\s_astriod</sprite>
+      <sprite>sprites\s_warp</sprite>
+      <sprite>sprites\s_arrow</sprite>
+      <sprite>sprites\s_bullet</sprite>
+      <sprite>sprites\s_laser</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\b_kylebackground</background>
@@ -71,6 +80,7 @@
   <objects name="objects">
     <objects name="Player">
       <object>objects\obj_healthpack</object>
+      <object>objects\obj_powerup_laser</object>
       <object>objects\obj_powerup_speed</object>
       <object>objects\obj_powerup_damage</object>
       <object>objects\o_bullet</object>
