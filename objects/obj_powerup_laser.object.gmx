@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>///Shoot Laser
 
+with(obj_enemy2 &amp;&amp; obj_enemy4 &amp;&amp; obj_enemy3 &amp;&amp; obj_enemy5 &amp;&amp; obj_AxisE &amp;&amp; obj_AxisH &amp;&amp; o_boss1 &amp;&amp; o_boss2 &amp;&amp; o_boss3 &amp;&amp; o_boss4 &amp;&amp; o_boss5)
+{
+if collision_line(o_player.x,o_player.y, o_player.x, --- 
+}
+
 with(self) instance_destroy();
 </string>
           </argument>
