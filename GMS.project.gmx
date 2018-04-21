@@ -85,6 +85,7 @@
       <object>objects\obj_powerup_speed</object>
       <object>objects\obj_powerup_damage</object>
       <object>objects\o_bullet</object>
+      <object>objects\obj_laserbeam</object>
       <object>objects\o_player</object>
     </objects>
     <objects name="Enemies">

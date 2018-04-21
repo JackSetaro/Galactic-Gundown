@@ -104,6 +104,8 @@ global.normal_dmg = global.dmg;
 
 global.laserbeam123 = false;
 global.bullet123 = true;
+
+global.beamdmg = 95;
 </string>
           </argument>
         </arguments>
@@ -1304,12 +1306,12 @@ if (drawlaser)
           <argument>
             <kind>1</kind>
             <string>///Laser Beam
-if (global.laserbeam123 = true)
+if (global.laserbeam123 = true &amp;&amp; keyboard_check_pressed(vk_space))
 {
 var len = 0;
 var maxlen = 100;
-while (len &lt; maxlen &amp;&amp; !position_meeting(x + lengthdir_x(len, image_angle), y + lengthdir_y(len, image_angle), obj_enemy2)){
-draw_sprite_ext(spr_laserbeamG, 0, x + lengthdir_x(len, image_angle), y + lengthdir_y(len, image_angle), 1, 1, image_angle, c_white, .85); 
+while (len &lt; maxlen &amp;&amp; !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), obj_enemy2)){
+draw_sprite_ext(spr_laserbeamG, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, .85); 
 len += 4; 
 }
 
@@ -1446,11 +1448,11 @@ bullet.speed = 15;
 }
 else if(global.laserbeam123 = true)
 {
-laserbeamR = instance_create(x, y, obj_healthpack)
+laserbeamR = instance_create(x, y, obj_laserbeam)
 
 laserbeamR.direction = image_angle  + 90;
 laserbeamR.image_angle = image_angle;
-laserbeamR.speed = 15;
+laserbeamR.speed = 999999999;
 }
 
 
