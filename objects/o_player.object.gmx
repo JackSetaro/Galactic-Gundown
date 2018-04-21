@@ -101,8 +101,9 @@ global.dmg = 45;
 normal_speed = global.spd; 
 global.normal_dmg = global.dmg; 
 
-global.face = image_angle;
 
+global.laserbeam123 = false;
+global.bullet123 = true;
 </string>
           </argument>
         </arguments>
@@ -545,57 +546,6 @@ health = health - 25
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Laser
-global.face = image_angle;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_powerup_laser">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw
-
-if (alarm[0] == -1)
-{
-    draw1 = true;
-    alarm[0] = room_speed * 3;     
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="4" ename="o_room">
       <action>
@@ -1004,6 +954,35 @@ else if (alarm[0] == -1 &amp;&amp; global.fullscreen == 1)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_powerup_laser">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw
+
+if (alarm[0] == -1)
+{
+    drawlaser = true;
+    alarm[0] = room_speed * 3;     
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_healthpack">
       <action>
         <libid>1</libid>
@@ -1295,11 +1274,14 @@ if (draw2)
             <kind>1</kind>
             <string>///Laser!
 
+A = room_width/(1024/350);
+B = room_height/2.56;
+
 if (drawlaser)
 {
     draw_set_font(fnt_large);
     draw_set_color(c_red);
-    draw_text(150, 300, "Laser!");
+    draw_text(A, B, "Laser!");
 }
 </string>
           </argument>
@@ -1422,11 +1404,24 @@ draw_self();
 //pause
 if (global.pause == 1) exit;
 if (dead == 1) exit;
+
+if(global.bullet123 = true)
+{
 bullet = instance_create(x, y, o_bullet)
 
 bullet.direction = image_angle  + 90;
 bullet.image_angle = image_angle;
 bullet.speed = 15;
+}
+else if(global.laserbeam123 = true)
+{
+laserbeamR = instance_create(x, y, obj_healthpack)
+
+laserbeamR.direction = image_angle  + 90;
+laserbeamR.image_angle = image_angle;
+laserbeamR.speed = 15;
+}
+
 
 </string>
           </argument>
