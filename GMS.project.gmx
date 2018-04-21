@@ -39,6 +39,7 @@
       <sprite>sprites\s_bossbullet</sprite>
       <sprite>sprites\spr_slider</sprite>
       <sprite>sprites\spr_bar</sprite>
+      <sprite>sprites\spr_laserbeamG</sprite>
       <sprite>sprites\spr_tp</sprite>
       <sprite>sprites\sprite29</sprite>
       <sprite>sprites\sprite26</sprite>
