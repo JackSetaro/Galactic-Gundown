@@ -48,7 +48,8 @@ if (global.pause) exit;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(distance_to_object(o_player) &gt; 290)
+            <string>///Beam Length
+if(distance_to_object(o_player) &gt; 290)
 {
 with(self) instance_destroy()
 }
