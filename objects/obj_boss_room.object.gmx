@@ -102,7 +102,7 @@ else
     spawned = true;
 }
 
-if (instance_exists(o_boss1))
+/*if (instance_exists(o_boss1))
 {
     if (distance_to_object(o_boss1) &lt; 5000)
     {
@@ -121,6 +121,21 @@ if (instance_exists(o_boss1))
             image_index = 0;
         }
     }
+}*/
+
+if(instance_exists(o_boss1))
+{
+    o_warp_top.image_index = 1;
+    o_warp_left.image_index = 1;
+    o_warp_bottom.image_index = 1;
+    o_warp_right.image_index = 1;
+}
+else
+{
+    o_warp_top.image_index = 0;
+    o_warp_left.image_index = 0;
+    o_warp_bottom.image_index = 0;
+    o_warp_right.image_index = 0;
 }
 </string>
           </argument>
