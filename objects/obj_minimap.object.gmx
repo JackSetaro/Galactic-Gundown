@@ -3,161 +3,11 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-5000</depth>
-  <persistent>-1</persistent>
+  <depth>0</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Variables
-global.playerpos = 0;
-// 1 = up 2 = right 3 = down 4 = left
-/*
-x1 = view_xview[0] + 900;
-x2 = view_xview[0] + 925;
-y1 = view_yview[0] + 80;
-y2 = view_yview[0] + 105;
-*/
-minix = view_xview[0] + 900
-miniy = view_yview[0] + 80
-
-instance_create(minix, miniy, obj_miniroomstart)
-
-currentroomx = obj_miniroomstart.x
-currentroomy = obj_miniroomstart.y
-
-drawtop = false;
-drawright = false;
-drawbottom = false;
-drawleft = false;
-
-// variable +=2
-global.add=0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Notes
-/*
-creating an object and trying to subtract a y in that doesnt actuylly chnage the overall number
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Toggle Map
-
-if keyboard_check_pressed(vk_tab)
- {
-   if draw = false
-      {
-      draw = true
-      }
-   else
-      {
-      draw = false
-      }
-   }
-   
-   
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Player Postion
-
-if global.playerpos == 1
-{
-    //currentroomy = currentroomy - 40
-    instance_create(currentroomx,currentroomy - global.add,obj_miniroom)
-}
-if global.playerpos == 2
-{
-    //currentroomx = currentroomx + 40
-    instance_create(currentroomx + global.add,currentroomy,obj_miniroom)
-}
-if global.playerpos == 3
-{
-    //currentroomy = currentroomy + 40
-    instance_create(currentroomx,currentroomy + global.add,obj_miniroom)
-}
-if global.playerpos == 4
-{
-    //currentroomx = currentroomx - 40
-    instance_create(currentroomx - global.add,currentroomy,obj_miniroom)
-}
-
-///maybe miniroom.x and .y might have to make ministart room
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -175,126 +25,24 @@ if global.playerpos == 4
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw minimap to top right
-x1 = view_xview[0] + 900;
-x2 = view_xview[0] + 925;
-y1 = view_yview[0] + 80;
-y2 = view_yview[0] + 105;
+            <string>minimap_width = 90;
+minimap_height = 45;
+minimap_room_width = 5;
+minimap_room_height = 5;
+minimap_line_width = 10;
 
-//if (draw)
-//{
-depth = -5000
-draw_set_colour(c_red);
-draw_rectangle(view_xview[0] + 800, view_yview[0] + 1 , view_xview[0] + 1023, view_yview[0] + 200, true);
-//draw_rectangle_colour(global.x1, global.y1, global.x2, global.y2, c_red, c_red, c_red, c_red, false);
-//draw_rectangle_colour(view_xview[0] + 900,view_yview[0] + 80 , view_xview[0] + 925, view_yview[0] + 105, c_red, c_red, c_red, c_red, false);
-//}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw Top
-/*
-if (drawtop)
-{
-    draw_rectangle_colour(x1, y1 - global.add, x2, y2 - global.add , c_red, c_red, c_red, c_red, false);
-}
+var x1 = view_xview[0] + 1024 - 10 - minimap_width;
+var y1 = view_yview[0] + 5;
+var x2 = view_xview[0] + 1024 - 10;
+var y2 = view_yview[0] + 5 + minimap_height;
+draw_set_color(c_white);
+draw_rectangle(x1, y1, x2, y2, true);
 
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw right
-/*
-if (drawright)
-{
-    draw_rectangle_colour(x1 + global.add, y1, x2 + global.add, y2, c_red, c_red, c_red, c_red, false);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw bottom
-/*
-if (drawbottom)
-{
-    draw_rectangle_colour(x1, y1 + global.add, x2, y2 + global.add, c_red, c_red, c_red, c_red, false);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw left
-/*
-if (drawleft)
-{
-    draw_rectangle_colour(x1 - global.add, y1, x2 - global.add, y2, c_red, c_red, c_red, c_red, false);
-}
+var current_room = instance_nearest(view_xview[0], view_yview[0], o_room);
+var room_x = x1 + minimap_width / 2 - minimap_room_width / 2;
+var room_y = y1 + minimap_height / 2 - minimap_room_height / 2;
+draw_set_color(c_red);
+scr_draw_minimap(current_room, room_x, room_y, true, true, true, true);
 </string>
           </argument>
         </arguments>

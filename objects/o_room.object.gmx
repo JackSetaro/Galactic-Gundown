@@ -7,7 +7,61 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Create the room map
+room_left = undefined;
+room_right = undefined;
+room_top = undefined;
+room_bottom = undefined;
+//visited = false;
+
+/*var current_room = instance_nearest(view_xview[0] - 1, view_yview[0] + 1, o_room);
+if(current_room != self)
+{
+    room_left = current_room;
+    current_room.room_right = self;
+}
+current_room = instance_nearest(view_xview[0] + 1024, view_yview[0] + 1, o_room);
+if(current_room != self)
+{
+    room_right = current_room;
+    current_room.room_left = self;
+}
+current_room = instance_nearest(view_xview[0], view_yview[0] - 1, o_room);
+if(current_room != self)
+{
+    room_top = current_room;
+    current_room.room_bottom = self;
+}
+current_room = instance_nearest(view_xview[0], view_yview[0] + 768, o_room);
+if(current_room != self)
+{
+    room_bottom = current_room;
+    current_room.room_top = self;
+}*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>

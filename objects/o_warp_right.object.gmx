@@ -53,7 +53,12 @@ image_index = 0;
             <string>///Puts player in room
 if (image_index == 0 &amp;&amp; place_meeting(x,y,o_player))
 {
+    var previous_room = instance_nearest(view_xview[0], view_yview[0], o_room);
     view_xview[0] += 1024
+    // Set the current room to visited
+    var current_room = instance_nearest(view_xview[0], view_yview[0], o_room);
+    current_room.room_left = previous_room;
+    
     with (o_player)
     {
         x += 200;

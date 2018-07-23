@@ -73,6 +73,7 @@
     <script>scripts\scr_sound.gml</script>
     <script>scripts\scr_menu.gml</script>
     <script>scripts\scr_paused.gml</script>
+    <script>scripts\scr_draw_minimap.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_large</font>
@@ -159,6 +160,7 @@
       <object>objects\obj_slider</object>
       <object>objects\obj_bar</object>
       <object>objects\obj_vslider</object>
+      <object>objects\obj_minimap</object>
     </objects>
     <objects name="Controllers">
       <object>objects\obj_fullscreen</object>

@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Create room
-instance_create(0, 0, o_room);
+var room_start = instance_create(0, 0, o_room);
+room_start.visited = true;
 
 rooms_generated = 0;
 genx = 0
