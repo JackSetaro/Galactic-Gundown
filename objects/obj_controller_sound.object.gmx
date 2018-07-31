@@ -124,7 +124,7 @@ audio_sound_gain(sans_fight, global.musicVolume, 0);
             <string>///Draw Percent
 draw_set_font(fnt_small);
 draw_set_halign(fa_left);
-draw_set_colour(c_lime);
+draw_set_colour(c_white);
 draw_text(x, y, "Music Percentage: " + string(obj_slider.percentage));
 //draw_text(x, y+25, "Music gain: " + string(audio_sound_get_gain));
 //draw_text(x, y, "Music Percentage: ");
