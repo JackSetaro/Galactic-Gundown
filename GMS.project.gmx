@@ -155,6 +155,7 @@
       <object>objects\obj_control</object>
       <object>objects\o_sound</object>
       <object>objects\obj_controls_draw</object>
+      <object>objects\obj_menu_draw</object>
       <object>objects\obj_options_game</object>
       <object>objects\obj_menu</object>
       <object>objects\obj_vbar</object>
@@ -169,6 +170,7 @@
       <object>objects\obj_controller_sound</object>
     </objects>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_start</room>
