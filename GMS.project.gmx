@@ -10,6 +10,7 @@
     <sound>sound\quietbeggar</sound>
     <sound>sound\You_Win</sound>
     <sound>sound\sans_fight</sound>
+    <sound>sound\menu_switch_temp</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
@@ -37,13 +38,9 @@
       <sprite>sprites\s_player</sprite>
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\s_bossbullet</sprite>
-      <sprite>sprites\spr_slider</sprite>
-      <sprite>sprites\spr_bar</sprite>
       <sprite>sprites\spr_laserbeamG</sprite>
       <sprite>sprites\spr_laserG</sprite>
       <sprite>sprites\spr_tp</sprite>
-      <sprite>sprites\sprite29</sprite>
-      <sprite>sprites\sprite26</sprite>
       <sprite>sprites\s_warp_sides</sprite>
       <sprite>sprites\s_room</sprite>
       <sprite>sprites\s_warp_top</sprite>
@@ -52,6 +49,9 @@
       <sprite>sprites\s_arrow</sprite>
       <sprite>sprites\s_bullet</sprite>
       <sprite>sprites\s_laser</sprite>
+      <sprite>sprites\spr_bar</sprite>
+      <sprite>sprites\spr_slider</sprite>
+      <sprite>sprites\spr_border</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -62,6 +62,8 @@
     <background>background\mercury_background</background>
     <background>background\sun_background</background>
     <background>background\earth_backgorund</background>
+    <background>background\bg_space</background>
+    <background>background\bg_space_low</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -154,17 +156,15 @@
       <object>objects\obj_control</object>
       <object>objects\o_sound</object>
       <object>objects\obj_controls_draw</object>
+      <object>objects\obj_menu_draw</object>
       <object>objects\obj_options_game</object>
-      <object>objects\obj_menu</object>
       <object>objects\obj_vbar</object>
       <object>objects\obj_slider</object>
       <object>objects\obj_bar</object>
       <object>objects\obj_vslider</object>
       <object>objects\obj_minimap</object>
-<<<<<<< HEAD
-=======
       <object>objects\obj_new_menu</object>
->>>>>>> parent of c39ff8e... New Options Glitch (Need Fix)
+      <object>objects\obj_new_options</object>
     </objects>
     <objects name="Controllers">
       <object>objects\obj_fullscreen</object>

@@ -25,53 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Audio Medic
-
-if (!audio_is_playing(Level_theme))
-{
-    audio_play_sound(Level_theme, 100, true);
-    audio_sound_gain(Level_theme, global.musicVolume, 0);
-}
-
-/*if (!audio_is_playing(quietbeggar))
-{
-    audio_play_sound(quietbeggar, 100, true);
-    audio_sound_gain(quietbeggar, global.musicVolume, 0);
-}
-
-if (!audio_is_playing(You_Win))
-{
-    audio_play_sound(You_Win, 100, true);
-    audio_sound_gain(You_Win, global.musicVolume, 0);
-}
-
-if (!audio_is_playing(sans_fight))
-{
-    audio_play_sound(sans_fight, 100, true);
-    audio_sound_gain(sans_fight, global.musicVolume, 0);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///Variables
-global.musicVolume = 1;
+menu_x = x;
+menu_y = y;
+button_h = 48;
+
+button[0] = "Audio";
+button[1] = "Controls";
+button[2] = "Main Menu";
+buttons = array_length_1d(button);
+
+menu_index = 0;
+last_selected = 0;
 </string>
           </argument>
         </arguments>
@@ -94,11 +59,52 @@ global.musicVolume = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Change Gain
-audio_sound_gain(Level_theme, global.musicVolume, 0); 
-audio_sound_gain(quietbeggar, global.musicVolume, 0);
-audio_sound_gain(You_Win, global.musicVolume, 0);
-audio_sound_gain(sans_fight, global.musicVolume, 0);
+            <string>///Movement
+menu_move = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+
+menu_index += menu_move;
+if (menu_index &lt; 0) menu_index = buttons - 1;
+if (menu_index &gt; buttons - 1) menu_index = 0;
+
+if (menu_index != last_selected) audio_play_sound(menu_switch_temp, 1, false);
+
+last_selected = menu_index;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+switch(menu_index) {
+    
+    case 0:
+        room_goto(rm_sound)
+        break; 
+    case 1:
+        room_goto(rm_controls)
+        break;
+    case 2:
+        game_restart(); 
+        break;
+}
 </string>
           </argument>
         </arguments>
@@ -121,13 +127,20 @@ audio_sound_gain(sans_fight, global.musicVolume, 0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw Percent
+            <string>///Draw the Buttons
 draw_set_font(fnt_small);
-draw_set_halign(fa_left);
-draw_set_colour(c_white);
-draw_text(x, y, "Music Percentage: " + string(obj_slider.percentage));
-//draw_text(x, y+25, "Music gain: " + string(audio_sound_get_gain));
-//draw_text(x, y, "Music Percentage: ");
+
+var i = 0;
+repeat(buttons) {
+    
+    draw_set_halign(fa_center);
+    draw_set_color(c_white);
+    
+    if (menu_index == i) draw_set_color(c_red);
+    
+    draw_text(menu_x, menu_y + button_h * i, button[i])
+    i++;
+}
 </string>
           </argument>
         </arguments>

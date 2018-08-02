@@ -155,8 +155,8 @@ var p;
 if (global.pause)
 {
 depth = -10000
-draw_set_font(fnt_options);
-draw_set_color(c_red);
+draw_set_font(fnt_small);
+draw_set_color(c_white);
 draw_sprite(sprite_index, 0,view_xview[0] + 120, view_yview[0] + 275 + mpos * space); 
 for (p = 0; p &lt; array_length_1d(paused); p += 1)
     {

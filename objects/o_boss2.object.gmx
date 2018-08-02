@@ -269,8 +269,16 @@ audio_play_sound(Pewpew, 0 ,false);
           <argument>
             <kind>1</kind>
             <string>///Death
-if(boss2_hp &lt; .01) instance_destroy(self); 
 
+if (boss2_hp &lt; 1)
+{
+    instance_create(o_boss2.x, o_boss2.y, obj_tp2)
+    instance_destroy();
+   // with(o_player)
+   // {
+   //     room_goto(rm_level2)
+   //}
+}
 
 </string>
           </argument>
