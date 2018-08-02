@@ -133,12 +133,7 @@ repeat(buttons) {
 switch(menu_index) {
     
     case 0:
-        room_goto_next();
-        global.level = 1;
-        global.ingame = 1;
-        break; 
-    case 2:
-        room_goto(rm_options)
+        show_debug_message("NEW MENU");
         break;
     case 3:
         game_end();
