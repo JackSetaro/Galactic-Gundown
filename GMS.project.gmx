@@ -52,6 +52,7 @@
       <sprite>sprites\s_arrow</sprite>
       <sprite>sprites\s_bullet</sprite>
       <sprite>sprites\s_laser</sprite>
+      <sprite>sprites\spr_border</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
