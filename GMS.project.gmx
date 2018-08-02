@@ -162,6 +162,10 @@
       <object>objects\obj_bar</object>
       <object>objects\obj_vslider</object>
       <object>objects\obj_minimap</object>
+<<<<<<< HEAD
+=======
+      <object>objects\obj_new_menu</object>
+>>>>>>> parent of c39ff8e... New Options Glitch (Need Fix)
     </objects>
     <objects name="Controllers">
       <object>objects\obj_fullscreen</object>
