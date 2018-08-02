@@ -180,8 +180,6 @@ global.tookdamage = 0;
             <kind>1</kind>
             <string>///global.sound =0;
 global.sound = 0;
-
-global.fullscreen = 1;
 </string>
           </argument>
         </arguments>
@@ -301,7 +299,7 @@ x += global.spd;
           <argument>
             <kind>1</kind>
             <string>///Pause
-if (global.pause == 1) image_alpha = 0;
+if (global.pause == 1) exit;
 </string>
           </argument>
         </arguments>

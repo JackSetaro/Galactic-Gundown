@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.fullscreen = 1;
+            <string>global.fullscreen = 0;
 </string>
           </argument>
         </arguments>
