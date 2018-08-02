@@ -60,7 +60,7 @@ last_selected = 0;
           <argument>
             <kind>1</kind>
             <string>///Movement
-menu_move = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+menu_move = keyboard_check_released(vk_down) - keyboard_check_released(vk_up);
 
 menu_index += menu_move;
 if (menu_index &lt; 0) menu_index = buttons - 1;
