@@ -4,11 +4,39 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Paused
+global.pause = 0;
+
+global.options = 0;
+
+global.sound = 0;
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -30,13 +58,15 @@ menu_x = x;
 menu_y = y;
 button_h = 48;
 
-button[0] = "Audio";
-button[1] = "Controls";
-button[2] = "Main Menu";
+button[0] = "Resume";
+button[1] = "Options";
+button[2] = "Quit to Menu";
 buttons = array_length_1d(button);
 
 menu_index = 0;
 last_selected = 0;
+
+space = 128;
 
 t = font_add("font.ttf", 30, false, false, 32, 128);
 </string>
@@ -62,7 +92,22 @@ t = font_add("font.ttf", 30, false, false, 32, 128);
           <argument>
             <kind>1</kind>
             <string>///Movement
-menu_move = keyboard_check_released(vk_down) - keyboard_check_released(vk_up);
+if (global.options == 1)
+{
+    exit;
+}
+else if (global.sound == 1)
+{
+    exit;
+}
+else if (dead == 1)
+{
+    exit;
+}
+else
+{
+
+menu_move = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 
 menu_index += menu_move;
 if (menu_index &lt; 0) menu_index = buttons - 1;
@@ -71,7 +116,7 @@ if (menu_index &gt; buttons - 1) menu_index = 0;
 if (menu_index != last_selected) audio_play_sound(menu_switch_temp, 1, false);
 
 last_selected = menu_index;
-
+}
 </string>
           </argument>
         </arguments>
@@ -95,9 +140,26 @@ last_selected = menu_index;
           <argument>
             <kind>1</kind>
             <string>///Draw the Buttons
+if (global.options == 1)
+{
+    exit
+}
+else if (global.sound == 1)
+{
+    exit;
+}
+else if (dead == 1)
+{
+    exit
+}
+else
+{
+
 draw_set_font(t);
 
 var i = 0;
+if (global.pause)
+{
 repeat(buttons) {
     
     draw_set_halign(fa_center);
@@ -105,8 +167,49 @@ repeat(buttons) {
     
     if (menu_index == i) draw_set_color(c_red);
     
-    draw_text(menu_x, menu_y + button_h * i, button[i])
+    draw_text(view_xview[0] + space + 800, view_yview[0] + 430 + (i * space), button[i])
     i++;
+    }
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Pause the Game
+if (global.options == 1)
+{
+exit
+}
+else
+{
+if (global.pause == 0)
+{
+    global.pause = 1;
+}
+else
+{
+    global.pause = 0;
+}
+
 }
 </string>
           </argument>
@@ -130,18 +233,33 @@ repeat(buttons) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (global.options = 1)
+{
+exit;
+}
+else{
+
 switch(menu_index) {
     
     case 0:
-        room_goto(rm_sound)
-        break; 
-    case 1:
-        room_goto(rm_controls)
+        global.pause = 0;
         break;
+        
+    case 1:
+        room_goto(rm_options_game);
+        global.options = 1;
+        audio_pause_sound(Level_theme)
+        break;
+    
     case 2:
+        room_goto(rm_menu);
+        //global.options = 0;
+        global.ingame = 0;
         game_restart(); 
         break;
+        
+    default: break;  
+}
 }
 </string>
           </argument>

@@ -30,6 +30,8 @@ global.pause = 0;
 
 global.options = 0;
 
+global.sound = 0;
+
 
 </string>
           </argument>

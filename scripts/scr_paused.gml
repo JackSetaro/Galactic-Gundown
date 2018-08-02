@@ -14,7 +14,7 @@ switch (mpos)
     }
     case 2:
     {
-      room_goto(rm_Menu);
+      room_goto(rm_menu);
       //global.options = 0;
       global.ingame = 0;
       game_restart(); 

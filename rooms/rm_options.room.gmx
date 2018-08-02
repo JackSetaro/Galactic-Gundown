@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_fullscreen" x="32" y="0" name="inst_1AFD8E35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_new_options" x="928" y="512" name="inst_D58D09F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_options" x="928" y="512" name="inst_D58D09F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

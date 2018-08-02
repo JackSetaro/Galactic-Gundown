@@ -8,6 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>small = font_add("font.ttf", 30, false, false, 32, 128);
+large = font_add("font.ttf", 100, false, false, 32, 128);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -29,30 +53,32 @@
 
 //Setup
 depth = -10000;
-draw_set_font(fnt_small);
-draw_set_colour(c_red); 
+draw_set_font(small);
+draw_set_colour(c_white); 
+draw_set_halign(fa_left);
+
  
 //Left Side
-draw_text(view_xview[0] + 100,view_yview[0] + 200,"Move Forward");
-draw_text(view_xview[0] + 100,view_yview[0] + 250,"Move left");              
-draw_text(view_xview[0] + 100,view_yview[0] + 300,"Move Backwards");        
-draw_text(view_xview[0] + 100,view_yview[0] + 350,"Move Right");
-draw_text(view_xview[0] + 100,view_yview[0] + 400,"Turn Left");
-draw_text(view_xview[0] + 100,view_yview[0] + 450,"Turn Right");
-draw_text(view_xview[0] + 100,view_yview[0] + 500,"Shoot"); 
-draw_text(view_xview[0] + 100,view_yview[0] + 550,"Full Screen");   
-draw_text(view_xview[0] + 100,view_yview[0] + 600,"Mini Map");   
+draw_text(x - 350,y + 200,"Move Forward");
+draw_text(x - 350,y + 250,"Move left");              
+draw_text(x - 350,y + 300,"Move Backwards");        
+draw_text(x - 350,y + 350,"Move Right");
+draw_text(x - 350,y + 400,"Turn Left");
+draw_text(x - 350,y + 450,"Turn Right");
+draw_text(x - 350,y + 500,"Shoot"); 
+draw_text(x - 350,y + 550,"Full Screen");   
+draw_text(x - 350,y + 600,"Mini Map");   
 
 //Right Side
-draw_text(view_xview[0] + 570,view_yview[0] + 200,"W");   
-draw_text(view_xview[0] + 570,view_yview[0] + 250,"A"); 
-draw_text(view_xview[0] + 570,view_yview[0] + 300,"S"); 
-draw_text(view_xview[0] + 570,view_yview[0] + 350,"D"); 
-draw_text(view_xview[0] + 570,view_yview[0] + 400,"Left   Arrow Key"); 
-draw_text(view_xview[0] + 570,view_yview[0] + 450,"Right Arrow Key"); 
-draw_text(view_xview[0] + 570,view_yview[0] + 500,"Space Bar");
-draw_text(view_xview[0] + 570,view_yview[0] + 550,"F");   
-draw_text(view_xview[0] + 570,view_yview[0] + 600,"Tab");     
+draw_text(x + 200,y + 200,"W");   
+draw_text(x + 200,y + 250,"A"); 
+draw_text(x + 200,y + 300,"S"); 
+draw_text(x + 200,y + 350,"D"); 
+draw_text(x + 200,y + 400,"Left   Arrow Key"); 
+draw_text(x + 200,y + 450,"Right Arrow Key"); 
+draw_text(x + 200,y + 500,"Space Bar");
+draw_text(x + 200,y + 550,"F");   
+draw_text(x + 200,y + 600,"Tab");     
  
 </string>
           </argument>
@@ -74,13 +100,14 @@ draw_text(view_xview[0] + 570,view_yview[0] + 600,"Tab");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Controls
+            <string>///Controls
 
 depth = -10000;
-draw_set_font(fnt_large);
-draw_set_colour(c_purple); 
+draw_set_font(large);
+draw_set_colour(c_white); 
 
-draw_text(view_xview[0] + 250,view_yview[0] + 60,"Controls"); 
+
+draw_text(x-400,y,"Controls"); 
 </string>
           </argument>
         </arguments>

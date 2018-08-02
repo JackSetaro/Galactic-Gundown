@@ -30,9 +30,7 @@ menu_x = x;
 menu_y = y;
 button_h = 48;
 
-button[0] = "Audio";
-button[1] = "Controls";
-button[2] = "Main Menu";
+button[0] = "Return";
 buttons = array_length_1d(button);
 
 menu_index = 0;
@@ -134,14 +132,22 @@ repeat(buttons) {
 switch(menu_index) {
     
     case 0:
-        room_goto(rm_sound)
-        break; 
-    case 1:
-        room_goto(rm_controls)
-        break;
-    case 2:
-        game_restart(); 
-        break;
+    if (global.ingame = 1)
+    {
+        room_goto(rm_options_game)
+        audio_pause_sound(Level_theme)
+        global.sound = 0;
+    }
+      if (global.ingame = 0)
+    {
+        room_goto(rm_options)
+        audio_pause_sound(Level_theme)
+        global.sound = 0;
+    }
+    break; 
+    
+    default: 
+    break; 
 }
 </string>
           </argument>
