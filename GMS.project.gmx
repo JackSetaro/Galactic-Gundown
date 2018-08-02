@@ -10,6 +10,7 @@
     <sound>sound\quietbeggar</sound>
     <sound>sound\You_Win</sound>
     <sound>sound\sans_fight</sound>
+    <sound>sound\menu_switch_temp</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
@@ -63,6 +64,8 @@
     <background>background\mercury_background</background>
     <background>background\sun_background</background>
     <background>background\earth_backgorund</background>
+    <background>background\bg_space</background>
+    <background>background\bg_space_low</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -163,6 +166,7 @@
       <object>objects\obj_bar</object>
       <object>objects\obj_vslider</object>
       <object>objects\obj_minimap</object>
+      <object>objects\obj_new_menu</object>
     </objects>
     <objects name="Controllers">
       <object>objects\obj_fullscreen</object>
