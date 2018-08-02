@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>-1</persistent>
-  <colour>0</colour>
+  <colour>12615935</colour>
   <showcolour>-1</showcolour>
   <code>//global.musicVolume = 100;</code>
   <enableViews>0</enableViews>
