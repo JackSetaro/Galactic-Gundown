@@ -3,6 +3,25 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles">
+    <datafile>
+      <name>font.ttf</name>
+      <exists>-1</exists>
+      <size>68656</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>font.ttf</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\Level_theme</sound>
@@ -55,9 +74,6 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\b_kylebackground</background>
-    <background>background\background1</background>
-    <background>background\background2</background>
     <background>background\mars_background</background>
     <background>background\mercury_background</background>
     <background>background\sun_background</background>
@@ -163,7 +179,7 @@
       <object>objects\obj_bar</object>
       <object>objects\obj_vslider</object>
       <object>objects\obj_minimap</object>
-      <object>objects\obj_new_menu</object>
+      <object>objects\obj_menu</object>
       <object>objects\obj_new_options</object>
     </objects>
     <objects name="Controllers">
@@ -173,7 +189,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_Menu</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_start</room>
     <room>rooms\rm_level2</room>
     <room>rooms\rm_level3</room>

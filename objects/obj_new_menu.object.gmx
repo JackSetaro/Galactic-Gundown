@@ -38,6 +38,8 @@ buttons = array_length_1d(button);
 
 menu_index = 0;
 last_selected = 0;
+
+t = font_add("font.ttf", 30, false, false, 32, 128);
 </string>
           </argument>
         </arguments>
@@ -94,7 +96,9 @@ last_selected = menu_index;
           <argument>
             <kind>1</kind>
             <string>///Draw the Buttons
-draw_set_font(fnt_small);
+
+
+draw_set_font(t);
 
 var i = 0;
 repeat(buttons) {
