@@ -71,9 +71,7 @@ with(obj_enemy2)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-///Randomizes the room
+            <string>///Randomizes the room
 randomize();
 
 if (gen == true)
@@ -96,13 +94,13 @@ if (gen == true)
             left = false;
             right = false;
             
-            instance_create(genx+ 540,geny,o_warp_top);
-            geny -= 960;
+            instance_create(genx+960,geny,o_warp_top);
+            geny -= 540;
             instance_create(genx,geny,o_room);
             
-            instance_create(genx+540,geny+384,obj_enemy_room);
+            instance_create(genx+960,geny+384,obj_enemy_room);
             
-            instance_create(genx+540,geny+704,o_warp_bottom);
+            instance_create(genx+960,geny+704,o_warp_bottom);
             
             rooms_generated++;
         }
@@ -114,13 +112,13 @@ if (gen == true)
             left = false;
             right = false;
             
-            instance_create(genx+540,geny+704,o_warp_bottom);
-            geny += 960;
+            instance_create(genx+960,geny+704,o_warp_bottom);
+            geny += 540;
             instance_create(genx,geny,o_room);
 
-            instance_create(genx+540,geny-384,obj_enemy_room);
+            instance_create(genx+960,geny-384,obj_enemy_room);
 
-            instance_create(genx+540,geny,o_warp_top);
+            instance_create(genx+960,geny,o_warp_top);
             
             rooms_generated++;
         }
