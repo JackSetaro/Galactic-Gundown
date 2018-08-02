@@ -170,7 +170,6 @@
       <object>objects\obj_controller_sound</object>
     </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_start</room>
