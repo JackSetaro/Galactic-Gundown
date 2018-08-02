@@ -92,8 +92,8 @@
   </fonts>
   <objects name="objects">
     <objects name="Player">
-      <object>objects\obj_healthpack</object>
       <object>objects\obj_powerup_laser</object>
+      <object>objects\obj_healthpack</object>
       <object>objects\obj_powerup_speed</object>
       <object>objects\obj_powerup_damage</object>
       <object>objects\o_bullet</object>

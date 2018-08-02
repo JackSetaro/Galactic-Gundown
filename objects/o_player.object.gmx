@@ -1332,15 +1332,20 @@ if (drawlaser)
           <argument>
             <kind>1</kind>
             <string>///Laser Beam
-if (global.laserbeam123 = true &amp;&amp; keyboard_check_pressed(vk_space))
+if (global.laserbeam123 = true &amp;&amp; keyboard_check(vk_space))
 {
 var len = 0;
 var maxlen = 300;
-while (len &lt; maxlen &amp;&amp; !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), obj_enemy2 || o_enemy1)){
-draw_sprite_ext(spr_laserbeamG, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
+while (len &lt; maxlen &amp;&amp; !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_enemy1)){
+draw_sprite_ext(spr_laserG, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
 len += 4; 
 }
-
+    var hit = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_enemy1) {
+    if (hit)
+    {
+        hit.ehealth -= 5;      
+    }
+}
 }
 </string>
           </argument>
@@ -1470,6 +1475,7 @@ bullet.direction = image_angle  + 90;
 bullet.image_angle = image_angle;
 bullet.speed = 15;
 }
+/*
 else if(global.laserbeam123 = true)
 {
 laserbeamR = instance_create(x, y, obj_laserbeam)
