@@ -94,13 +94,13 @@ if (gen == true)
             left = false;
             right = false;
             
-            instance_create(genx+960,geny,o_warp_top);
-            geny -= 540;
+            instance_create(genx+512,geny,o_warp_top);
+            geny -= 768;
             instance_create(genx,geny,o_room);
             
-            instance_create(genx+960,geny+384,obj_enemy_room);
+            instance_create(genx+512,geny+384,obj_enemy_room);
             
-            instance_create(genx+960,geny+704,o_warp_bottom);
+            instance_create(genx+512,geny+704,o_warp_bottom);
             
             rooms_generated++;
         }
@@ -112,13 +112,13 @@ if (gen == true)
             left = false;
             right = false;
             
-            instance_create(genx+960,geny+704,o_warp_bottom);
-            geny += 540;
+            instance_create(genx+512,geny+704,o_warp_bottom);
+            geny += 768;
             instance_create(genx,geny,o_room);
 
-            instance_create(genx+960,geny-384,obj_enemy_room);
+            instance_create(genx+512,geny-384,obj_enemy_room);
 
-            instance_create(genx+960,geny,o_warp_top);
+            instance_create(genx+512,geny,o_warp_top);
             
             rooms_generated++;
         }
@@ -131,10 +131,10 @@ if (gen == true)
             right = false;
             
             instance_create(genx+960,geny+352,o_warp_right);
-            genx += 1080;
+            genx += 1024;
             instance_create(genx,geny,o_room);
 
-            instance_create(genx+960,geny+384,obj_enemy_room);
+            instance_create(genx+512,geny+384,obj_enemy_room);
           
             instance_create(genx,geny+352,o_warp_left);
             
@@ -149,10 +149,10 @@ if (gen == true)
             right = true;
             
             instance_create(genx,geny+352,o_warp_left);
-            genx -= 1080;
+            genx -= 1024;
             instance_create(genx,geny,o_room);
 
-            instance_create(genx+960,geny+384,obj_enemy_room);
+            instance_create(genx+512,geny+384,obj_enemy_room);
             
             instance_create(genx+960,geny+352,o_warp_right);
             
@@ -161,7 +161,7 @@ if (gen == true)
         
             if (!instance_exists(obj_powerup_room))
     {
-        instance_create(genx+960,geny+384,obj_powerup_room);
+        instance_create(genx+512,geny+384,obj_powerup_room);
     }
          
     }
@@ -169,7 +169,7 @@ if (gen == true)
 }
 else if (gen == false &amp;&amp; !instance_exists(obj_boss_room))
 {
-    instance_create(genx+960,geny+384,obj_boss_room);
+    instance_create(genx+512,geny+384,obj_boss_room);
 }
 
 </string>
