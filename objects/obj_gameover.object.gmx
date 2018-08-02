@@ -8,6 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>big = font_add("font.ttf", 100, true, false, 32, 128);
+small = font_add("font.ttf", 40, true, false, 32, 128);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -26,11 +50,12 @@
           <argument>
             <kind>1</kind>
             <string>depth = -10000
-draw_set_font(fnt_large);
+draw_set_halign(fa_center);
+draw_set_font(big);
 draw_set_color(c_red);
-draw_text(view_xview[0] + 175,view_yview[0] + 300,"Game Over!");
-draw_set_font(fnt_small);
-draw_text(view_xview[0] + 250,view_yview[0] + 400,"Press enter to restart");
+draw_text(view_xview[0] + 960,view_yview[0] + 360,"Game Over!");
+draw_set_font(small);
+draw_text(view_xview[0] + 960,view_yview[0] + 600,"Press enter to restart");
 </string>
           </argument>
         </arguments>
