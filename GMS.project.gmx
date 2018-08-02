@@ -160,13 +160,13 @@
       <object>objects\obj_controls_draw</object>
       <object>objects\obj_menu_draw</object>
       <object>objects\obj_options_game</object>
+      <object>objects\obj_menu</object>
       <object>objects\obj_vbar</object>
       <object>objects\obj_slider</object>
       <object>objects\obj_bar</object>
       <object>objects\obj_vslider</object>
       <object>objects\obj_minimap</object>
       <object>objects\obj_new_menu</object>
-      <object>objects\obj_new_options</object>
     </objects>
     <objects name="Controllers">
       <object>objects\obj_fullscreen</object>
