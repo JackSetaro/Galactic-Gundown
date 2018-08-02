@@ -54,6 +54,8 @@
       <sprite>sprites\s_laser</sprite>
       <sprite>sprites\spr_new_bar</sprite>
       <sprite>sprites\spr_slider</sprite>
+      <sprite>sprites\spr_border_fill</sprite>
+      <sprite>sprites\spr_border</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
