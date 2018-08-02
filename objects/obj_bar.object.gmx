@@ -29,8 +29,8 @@
 
 can_click = true;
 
-rightLimit = x+(sprite_get_width(spr_bar)/2)-30;
-leftLimit = x-(sprite_get_width(spr_bar)/2)+30;
+rightLimit = x+(sprite_get_width(spr_bar)/2);
+leftLimit = x-(sprite_get_width(spr_bar)/2);
 //create the slider for this bar and assign it some values
 a = instance_create(x,y,obj_slider);
 a.image_xscale = .75;

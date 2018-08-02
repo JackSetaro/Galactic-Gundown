@@ -104,7 +104,8 @@ else if (dead == 1)
 {
     exit;
 }
-else
+
+if (global.pause)
 {
 
 menu_move = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);

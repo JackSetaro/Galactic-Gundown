@@ -186,6 +186,28 @@ global.fullscreen = 1;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Font
+t = font_add("font.ttf", 30, false, false, 32, 128);
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="1">
       <action>
@@ -1186,7 +1208,7 @@ file_text_close(SaveFile);
 
 if (draw)
 {
-    draw_set_font(fnt_large);
+    draw_set_font(t);
     draw_set_color(c_red);
     draw_text(200, 300, "Speed Up!");
 }
@@ -1195,7 +1217,7 @@ if (draw)
 
 if (draw3)
 {
-    draw_set_font(fnt_large);
+    draw_set_font(t);
     draw_set_color(c_red);
     draw_text(250, 350, "Speed Up!");
 }
@@ -1224,7 +1246,7 @@ if (draw3)
 
 if (draw1)
 {
-    draw_set_font(fnt_large);
+    draw_set_font(t);
     draw_set_color(c_red);
     draw_text(150, 300, "Damage Up!");
 }
@@ -1252,7 +1274,7 @@ if (draw1)
 
 if (draw2)
 {
-    draw_set_font(fnt_large);
+    draw_set_font(t);
     draw_set_color(c_red);
     draw_text(150, 300, "Health +25");
 }
@@ -1283,7 +1305,7 @@ B = room_height/2.56;
 
 if (drawlaser)
 {
-    draw_set_font(fnt_large);
+    draw_set_font(t);
     draw_set_color(c_red);
     draw_text(A, B, "Laser!");
 }
@@ -1348,9 +1370,9 @@ if (global.options == 1)
 else
 {
 depth = -5000; 
-draw_set_colour(c_lime);
-draw_set_font(fnt_small); 
-draw_text(view_xview[0] + 600, view_yview[0] + 25, "Level " + string(global.level));
+draw_set_colour(c_white);
+draw_set_font(t); 
+draw_text(view_xview[0] + 1800, view_yview[0] + 15, "Level " + string(global.level));
 }
 </string>
           </argument>

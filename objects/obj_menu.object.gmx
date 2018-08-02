@@ -40,6 +40,7 @@ menu_index = 0;
 last_selected = 0;
 
 t = font_add("font.ttf", 30, false, false, 32, 128);
+
 </string>
           </argument>
         </arguments>
