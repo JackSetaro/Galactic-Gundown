@@ -106,6 +106,7 @@ global.laserbeam123 = false;
 global.bullet123 = true;
 
 global.juice = 120;
+laz = false;
 </string>
           </argument>
         </arguments>
@@ -204,6 +205,30 @@ global.fullscreen = 1;
             <kind>1</kind>
             <string>///Font
 t = font_add("font.ttf", 30, false, false, 32, 128);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Laz = false
+laz = false;
 </string>
           </argument>
         </arguments>
@@ -589,6 +614,8 @@ health = health - 25
           <argument>
             <kind>1</kind>
             <string>///Juice
+var hasjuice = true;
+
 if(keyboard_check(vk_space) &amp;&amp; global.laserbeam123 == true)
     {
         if(global.juice &gt;= 0) 
@@ -597,6 +624,8 @@ if(keyboard_check(vk_space) &amp;&amp; global.laserbeam123 == true)
             } 
         else
             {
+            laz = true;
+            alarm[2] = room_speed *3;
             global.juice = global.juice - 0;
             }
     }
@@ -614,6 +643,11 @@ if(keyboard_check(vk_space) &amp;&amp; global.laserbeam123 == true)
             global.juice = global.juice + 0;
             }
     }
+    
+    
+   
+    
+    
 </string>
           </argument>
         </arguments>
@@ -1378,6 +1412,11 @@ if (drawlaser)
           <argument>
             <kind>1</kind>
             <string>///Laser Beam
+
+if(laz = false)
+
+{
+
 if (global.laserbeam123 = true &amp;&amp; keyboard_check(vk_space))
 {
 var len = 0;
@@ -1398,6 +1437,8 @@ len += 4;
     if(enemy2) enemy2.e2health -= 5;
     if(boss1) boss1.hp -= 1;
     if(boss2) boss2.boss2_hp -= 1;
+}
+
 }
 </string>
           </argument>
