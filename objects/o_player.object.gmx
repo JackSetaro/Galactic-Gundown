@@ -1336,16 +1336,22 @@ if (global.laserbeam123 = true &amp;&amp; keyboard_check(vk_space))
 {
 var len = 0;
 var maxlen = 300;
-while (len &lt; maxlen &amp;&amp; !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_enemy1) &amp;&amp; !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), obj_enemy2)){
+while (len &lt; maxlen &amp;&amp;
+    !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_enemy1) &amp;&amp;
+    !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), obj_enemy2) &amp;&amp;
+    !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_boss1) &amp;&amp;
+    !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_boss2)){
 draw_sprite_ext(spr_laserG, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
 len += 4; 
 }
-    var hit = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_enemy1) {
-    if (hit)
-    {
-        hit.ehealth -= 5;      
-    }
-}
+    var enemy1 = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_enemy1);
+    var enemy2 = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), obj_enemy2);
+    var boss1 = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_boss1);
+    var boss2 = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_boss2);
+    if(enemy1) enemy1.ehealth -= 5;
+    if(enemy2) enemy2.e2health -= 5;
+    if(boss1) boss1.hp -= 1;
+    if(boss2) boss2.boss2_hp -= 1;
 }
 </string>
           </argument>
