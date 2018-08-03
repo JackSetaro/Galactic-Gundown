@@ -1557,7 +1557,7 @@ if(global.laserbeam123 == true  &amp;&amp; laz = false)
     {
     draw_rectangle_colour(view_xview[0], view_yview[0] + 30,view_xview[0] + global.juice , view_yview[0] + 15, c_navy, c_blue, c_navy , c_blue, false);
     }
-    else
+else if(global.laserbeam123 == true  &amp;&amp; laz = true)
     {
     draw_rectangle_colour(view_xview[0], view_yview[0] + 30,view_xview[0] + global.juice , view_yview[0] + 15, c_red, c_maroon, c_red , c_maroon, false);
     }
