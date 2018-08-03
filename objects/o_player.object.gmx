@@ -616,7 +616,7 @@ health = health - 25
             <string>///Juice
 var hasjuice = true;
 
-if(keyboard_check(vk_space) &amp;&amp; global.laserbeam123 == true)
+if(keyboard_check(vk_space) &amp;&amp; global.laserbeam123 == true &amp;&amp; laz = false)
     {
         if(global.juice &gt;= 0) 
             {
@@ -626,7 +626,7 @@ if(keyboard_check(vk_space) &amp;&amp; global.laserbeam123 == true)
             {
             laz = true;
             alarm[2] = room_speed *3;
-            global.juice = global.juice - 0;
+            global.juice = global.juice + 0;
             }
     }
 
@@ -643,6 +643,12 @@ if(keyboard_check(vk_space) &amp;&amp; global.laserbeam123 == true)
             global.juice = global.juice + 0;
             }
     }
+    
+    
+   if(laz = true)
+   {
+   global.juice = 120;
+   }
     
     
    
