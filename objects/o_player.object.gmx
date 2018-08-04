@@ -1507,6 +1507,7 @@ if(!keyboard_check(vk_space))
 bluebeam = true;
 greenbeam = false;
 redbeam = false;
+alarm[3] = -1;
 }
 
 if(keyboard_check(vk_space) &amp;&amp; alarm[3] == -1)
