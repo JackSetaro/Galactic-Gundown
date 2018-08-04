@@ -1510,7 +1510,7 @@ redbeam = false;
 alarm[3] = -1;
 }
 
-if(keyboard_check(vk_space) &amp;&amp; alarm[3] == -1)
+if(!laz &amp;&amp; keyboard_check(vk_space) &amp;&amp; alarm[3] == -1)
 {
 alarm[3] = room_speed * 1;
 }
