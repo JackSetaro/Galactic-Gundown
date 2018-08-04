@@ -1548,7 +1548,7 @@ if(laz = false )
             !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), obj_enemy2) &amp;&amp;
             !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_boss1) &amp;&amp;
             !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_boss2)){
-            draw_sprite_ext(spr_powerup_speed, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
+            draw_sprite_ext(spr_lasergre, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
             len += 4; 
         }
     var enemy1 = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_enemy1);
@@ -1569,7 +1569,7 @@ if(laz = false )
             !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), obj_enemy2) &amp;&amp;
             !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_boss1) &amp;&amp;
             !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_boss2)){
-            draw_sprite_ext(s_warp, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
+            draw_sprite_ext(spr_laserred, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
             len += 4; 
         }
     var enemy1 = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_enemy1);

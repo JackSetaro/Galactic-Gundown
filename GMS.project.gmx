@@ -58,6 +58,8 @@
       <sprite>sprites\s_bossbullet</sprite>
       <sprite>sprites\spr_laserbeamG</sprite>
       <sprite>sprites\spr_laserG</sprite>
+      <sprite>sprites\spr_lasergre</sprite>
+      <sprite>sprites\spr_laserred</sprite>
       <sprite>sprites\spr_tp</sprite>
       <sprite>sprites\s_warp_sides</sprite>
       <sprite>sprites\s_warp_top</sprite>
