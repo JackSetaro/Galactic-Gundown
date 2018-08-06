@@ -63,7 +63,7 @@ t = font_add("font.ttf", 30, false, false, 32, 128);
           <argument>
             <kind>1</kind>
             <string>///Movement
-menu_move = keyboard_check_released(vk_down) - keyboard_check_released(vk_up);
+menu_move = (keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0,gp_padd)) - (keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0,gp_padu));
 
 menu_index += menu_move;
 if (menu_index &lt; 0) menu_index = buttons - 1;
@@ -73,6 +73,45 @@ if (menu_index != last_selected) audio_play_sound(menu_switch_temp, 1, false);
 
 last_selected = menu_index;
 
+if(keyboard_check_released(vk_enter) || gamepad_button_check_pressed(0,gp_face1))
+{
+    switch(menu_index) {
+    
+    case 0:
+        room_goto(rm_sound)
+        break; 
+    case 1:
+        room_goto(rm_controls)
+        break;
+    case 2:
+        if (global.level = 1)
+        {
+            room_goto(rm_start);
+        }
+        if (global.level = 2)
+        {
+            room_goto(rm_level2);
+        }
+        if (global.level = 3)
+        {
+            room_goto(rm_level3);
+        }
+        if (global.level = 4)
+        {
+            room_goto(rm_level4);
+        }
+        if (global.level = 5)
+        {
+            room_goto(rm_level5);
+        }
+        global.options = 0;
+        audio_resume_sound(Level_theme)
+        break;
+    case 3:
+        game_restart();
+        break; 
+    }
+}
 </string>
           </argument>
         </arguments>

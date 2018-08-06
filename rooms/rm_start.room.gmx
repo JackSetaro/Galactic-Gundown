@@ -62,7 +62,6 @@ instance_create(0, 0, o_room);</code>
     <instance objName="obj_fullscreen" x="0" y="0" name="inst_10F8E76D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="room_fix" x="32" y="0" name="inst_04204FBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_player" x="128" y="640" name="inst_01D41EE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-60"/>
-    <instance objName="obj_powerup_laser" x="224" y="640" name="inst_1A2A5851" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_room_generator" x="64" y="0" name="inst_97A3ED84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_minimap" x="96" y="0" name="inst_1957D7DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="896" y="512" name="inst_F03BA5B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
