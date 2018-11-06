@@ -344,7 +344,7 @@ if (canShoot)
             len += 4; 
         }
     var player = instance_position(x + lengthdir_x(len, image_angle - 90), y + lengthdir_y(len, image_angle - 90), o_player);
-    if(player) player.currentHp -= .2;
+    if(player) health -= .75;
 }
 </string>
           </argument>
