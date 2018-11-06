@@ -285,44 +285,6 @@ if (hp &lt; 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Shooting
-
-if (global.pause) exit;
-if (global.dead) exit;
-
-var dir = point_direction(x, y, o_player.x, o_player.y);
-var bulletSpeed = 13;
-
-if (canShoot) 
-{
-    var bid = instance_create(x, y, obj_enemybullet); 
-    bid.direction = dir;
-    bid.speed = bulletSpeed;
-    bid.image_angle = dir; 
-    
-    canShoot = false;
-    alarm[0] = 15; 
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///Death
 
 if(hp &lt; .01) instance_destroy();
@@ -351,6 +313,38 @@ if(hp &lt; .01) instance_destroy();
             <string>///Boss Healthbar
 draw_self();
 draw_healthbar(x - 100,y + 175, x + 100, y + 181, hp , c_red, c_orange, c_green, 0, true, true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (canShoot)
+        {   
+            var len = 0;
+            var maxlen = 300;
+            while (len &lt; maxlen &amp;&amp;
+            !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_player)){
+            draw_sprite_ext(spr_laserG, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
+            len += 4; 
+        }
+    var player = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_player);
+    if(player) player.currentHp -= .2;
+}
 </string>
           </argument>
         </arguments>
