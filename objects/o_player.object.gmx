@@ -999,11 +999,14 @@ file_text_close(SaveFile);
             <kind>1</kind>
             <string>///Speedup!
 
+var A = room_width/2;
+var B = room_height/2;
+
 if (draw)
 {
     draw_set_font(t);
     draw_set_color(c_red);
-    draw_text(200, 300, "Speed Up!");
+    draw_text(A, B, "Speed Up!");
 }
 
 //Speedup!
@@ -1012,7 +1015,7 @@ if (draw3)
 {
     draw_set_font(t);
     draw_set_color(c_red);
-    draw_text(250, 350, "Speed Up!");
+    draw_text(A, B, "Speed Up!");
 }
 
 </string>
@@ -1037,11 +1040,14 @@ if (draw3)
             <kind>1</kind>
             <string>///Damage Up!
 
+var A = room_width/2;
+var B = room_height/2;
+
 if (draw1)
 {
     draw_set_font(t);
     draw_set_color(c_red);
-    draw_text(150, 300, "Damage Up!");
+    draw_text(A, B, "Damage Up!");
 }
 </string>
           </argument>
@@ -1065,11 +1071,14 @@ if (draw1)
             <kind>1</kind>
             <string>///Health Up!
 
+var A = room_width/2;
+var B = room_height/2;
+
 if (draw2)
 {
     draw_set_font(t);
     draw_set_color(c_red);
-    draw_text(150, 300, "Health +25");
+    draw_text(A, B, "Health +25");
 }
 </string>
           </argument>
@@ -1093,8 +1102,8 @@ if (draw2)
             <kind>1</kind>
             <string>///Laser!
 
-A = room_width/(1024/350);
-B = room_height/2.56;
+var A = room_width/2;
+var B = room_height/2;
 
 if (drawlaser)
 {
