@@ -333,16 +333,17 @@ draw_healthbar(x - 100,y + 175, x + 100, y + 181, hp , c_red, c_orange, c_green,
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (canShoot)
+            <string>///Draws Laser
+if (canShoot)
         {   
             var len = 0;
             var maxlen = 300;
             while (len &lt; maxlen &amp;&amp;
-            !position_meeting(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_player)){
-            draw_sprite_ext(spr_laserG, 0, x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), 1, 1, image_angle, c_white, 1); 
+            !position_meeting(x + lengthdir_x(len, image_angle - 90), y + lengthdir_y(len, image_angle - 90), o_player)){
+            draw_sprite_ext(spr_laserG, 0, x + lengthdir_x(len, image_angle - 90), y + lengthdir_y(len, image_angle - 90), 1, 1, image_angle, c_white, 1); 
             len += 4; 
         }
-    var player = instance_position(x + lengthdir_x(len, image_angle + 90), y + lengthdir_y(len, image_angle + 90), o_player);
+    var player = instance_position(x + lengthdir_x(len, image_angle - 90), y + lengthdir_y(len, image_angle - 90), o_player);
     if(player) player.currentHp -= .2;
 }
 </string>
