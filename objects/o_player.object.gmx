@@ -51,7 +51,6 @@ global.bullet123 = true;
 global.juice = 180;
 laz = false;
 
-
 dmgup = false;
 bluebeam = true;
 greenbeam = false;

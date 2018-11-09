@@ -40,6 +40,8 @@ spawnenemy = false;
 canShoot = true;
 spawn = 1;
 Switch = true;
+
+Shoot = false;
 </string>
           </argument>
         </arguments>
@@ -68,6 +70,30 @@ if (spawn = 1)
     y = room_height /  6.75;
     }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Room Speed
+alarm[1] = room_speed * 3; 
 </string>
           </argument>
         </arguments>
@@ -292,6 +318,37 @@ if(hp &lt; .01) instance_destroy();
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Alarm Laser
+if(Shoot == true)
+{
+    alarm[1] = room_speed * 3;
+    Shoot = false;
+}
+else if(Shoot == false)
+{
+    alarm[1] = room_speed * 3;
+    Shoot = true;  
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="8" enumb="0">
       <action>
@@ -334,7 +391,7 @@ draw_healthbar(x - 100,y + 175, x + 100, y + 181, hp , c_red, c_orange, c_green,
           <argument>
             <kind>1</kind>
             <string>///Draws Laser
-if (canShoot)
+if (canShoot &amp;&amp; Shoot)
         {   
             var len = 0;
             var maxlen = 300;
