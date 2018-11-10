@@ -61,6 +61,7 @@
       <sprite>sprites\spr_lasergre</sprite>
       <sprite>sprites\spr_laserred</sprite>
       <sprite>sprites\spr_tp</sprite>
+      <sprite>sprites\spr_boss3laz</sprite>
       <sprite>sprites\s_warp_sides</sprite>
       <sprite>sprites\s_warp_top</sprite>
       <sprite>sprites\s_astriod</sprite>

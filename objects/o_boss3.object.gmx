@@ -455,10 +455,10 @@ draw_healthbar(x - 100,y + 175, x + 100, y + 181, hp , c_red, c_orange, c_green,
 if (canShoot &amp;&amp; Shoot)
         {   
             var len = 0;
-            var maxlen = 300;
+            var maxlen = room_height;
             while (len &lt; maxlen &amp;&amp;
             !position_meeting(x + lengthdir_x(len, image_angle - 90), y + lengthdir_y(len, image_angle - 90), o_player)){
-            draw_sprite_ext(spr_laserG, 0, x + lengthdir_x(len, image_angle - 90), y + lengthdir_y(len, image_angle - 90), 1, 1, image_angle, c_white, 1); 
+            draw_sprite_ext(spr_boss3laz, 0, x + lengthdir_x(len, image_angle - 90), y + lengthdir_y(len, image_angle - 90), 1, 1, image_angle, c_white, 1); 
             len += 4; 
         }
     var player = instance_position(x + lengthdir_x(len, image_angle - 90), y + lengthdir_y(len, image_angle - 90), o_player);
