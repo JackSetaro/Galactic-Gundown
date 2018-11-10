@@ -165,7 +165,7 @@ canShoot = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Follow Player
+            <string>///Movement
 if (global.pause) exit;
 if (global.dead == 1) exit;
 
@@ -178,6 +178,45 @@ A2 = room_height / 6.75;
 //Right Side
 A3 = room_width / (1024/896);
 
+close = false;
+
+if(o_player.y &lt;= room_height/6)
+{
+close = true;
+}
+
+if(close)
+{
+if !Switch
+{
+if x &lt;= A1
+{
+Switch = true;
+}
+else
+{
+mp_potential_step(A1, A2 ,10, true);
+}
+}
+
+if Switch
+{
+if x!= A3
+{
+mp_potential_step(A3, A2 ,10, true);
+}
+else
+{
+if(x == A3)
+{
+Switch = false;
+}
+}
+}
+}
+
+if(!close)
+{
 if !Switch
 {
 if x &lt;= A1
@@ -204,9 +243,7 @@ Switch = false;
 }
 }
 }
-
-
-
+}
 
 
 
