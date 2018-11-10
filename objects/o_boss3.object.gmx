@@ -225,7 +225,7 @@ Switch = true;
 }
 else
 {
-mp_potential_step(A1, A2 ,3, true);
+mp_potential_step(A1, A2 ,5, true);
 }
 }
 
@@ -233,7 +233,7 @@ if Switch
 {
 if x!= A3
 {
-mp_potential_step(A3, A2 ,3, true);
+mp_potential_step(A3, A2 ,5, true);
 }
 else
 {

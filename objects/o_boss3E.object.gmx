@@ -222,7 +222,7 @@ Switch = true;
 }
 else
 {
-mp_potential_step(xd, lol ,3, true);
+mp_potential_step(xd, lol ,4, true);
 }
 }
 
@@ -230,7 +230,7 @@ if Switch
 {
 if y!= ha
 {
-mp_potential_step(xd, ha ,3, true);
+mp_potential_step(xd, ha ,4, true);
 }
 else
 {
